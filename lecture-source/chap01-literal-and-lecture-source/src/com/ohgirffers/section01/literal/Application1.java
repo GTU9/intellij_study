@@ -1,8 +1,8 @@
 package com.ohgirffers.section01.literal;
 
 public class Application1 {
-    public static void main(String[] args) {
-        //엄마
+    public static void main(String[] args){
+
         /*여러 가지 값의 형태를 출력해보자.*/
         /*1. 숫자 형태의 값
         * 1-1. 정수 형태의 값
