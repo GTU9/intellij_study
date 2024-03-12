@@ -30,7 +30,7 @@ public class Application3 {
 
         /*앞의 조건이 true로 강제화 해두고 && 뒤의 조건은 선치 증가로 값을 증가시킨 후 별 의미 없는 조건으로 만들어놓았다.
          * num2 선치 증가 코드가 동작했다면 result2은 11일 것이고 동작하지 않았다면 결과는 10일 것이다.
-         * */
+         *  */
 
         int result2= (true||++num2>0)? num2:num2;
 
