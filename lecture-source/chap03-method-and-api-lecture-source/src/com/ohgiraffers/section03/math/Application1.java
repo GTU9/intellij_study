@@ -47,7 +47,5 @@ public class Application1 {
          * 난수는 프로그래밍에서 꽤나 자주 사용되는 편이다.
          * */
         System.out.println("난수 발생 : " + Math.random());
-
-
     }
 }
