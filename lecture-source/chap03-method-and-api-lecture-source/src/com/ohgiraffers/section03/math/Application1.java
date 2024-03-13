@@ -48,5 +48,6 @@ public class Application1 {
          * */
         System.out.println("난수 발생 : " + Math.random());
 
+
     }
 }
