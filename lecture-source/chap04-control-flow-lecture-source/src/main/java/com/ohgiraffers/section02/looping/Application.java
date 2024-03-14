@@ -28,6 +28,8 @@ public class Application {
 //        b.testSimpleWhileStatement();
 //        b.testWhileExample();
 //        b.testWhileExample2();
-        b.testWhileExample3();
+//        b.testWhileExample3();
+        C_doWhile c=new C_doWhile();
+        c.testSimpleDoWhileStatement();
     }
 }
