@@ -19,6 +19,15 @@ public class Application {
 
         A_nestedFor a2 = new A_nestedFor();
         /* 중첩 반복문을 사용하는 예제 */
-        a2.printGugudanFromTwoToNine();
+//        a2.printGugudanFromTwoToNine();
+//        a2.printUpgaradeGugudanFromTwoToNine();
+//        a2.printStarInputRowTimes();
+//        a2.printTriangleStars();
+
+        B_while b= new B_while();
+//        b.testSimpleWhileStatement();
+//        b.testWhileExample();
+//        b.testWhileExample2();
+        b.testWhileExample3();
     }
 }
