@@ -10,6 +10,15 @@ public class Application {
 
         /*반복문을 사용하는 예제*/
 //        a.testForExample();
-        a.testForExample2();
+//        a.testForExample2();
+//        a.testForExample3();
+//        a.testForExample4();
+
+        /* 반복문을 일상 생활에서 사용하는 예제 (규칙찾기)*/
+//        a.printSimpleGugudan();
+
+        A_nestedFor a2 = new A_nestedFor();
+        /* 중첩 반복문을 사용하는 예제 */
+        a2.printGugudanFromTwoToNine();
     }
 }
