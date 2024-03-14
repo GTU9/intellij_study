@@ -30,6 +30,7 @@ public class Application {
 //        b.testWhileExample2();
 //        b.testWhileExample3();
         C_doWhile c=new C_doWhile();
-        c.testSimpleDoWhileStatement();
+//        c.testSimpleDoWhileStatement();
+        c.testDoWhileExample1();
     }
 }

@@ -1,5 +1,7 @@
 package com.ohgiraffers.section02.looping;
 
+import java.util.Scanner;
+
 public class C_doWhile {
     public void testSimpleDoWhileStatement(){
         /*do while문 단독 사용에 대한 흐름을 이해하고 적용할 수 있다.*/
@@ -18,5 +20,22 @@ public class C_doWhile {
         }while(false);
 
         System.out.println("반복문 종료 확인...");
+    }
+
+    public void testDoWhileExample1(){
+        /*do-while문의 흐름을 이해하고 적용할 수 있다 (1)*/
+        /*키보드로 문자열을 입력받아 반복적으로 출력
+        * 단, exit가 입력되면 반복문을 종료한다.
+        * */
+        Scanner sc=new Scanner(System.in);
+        String str="";
+        do{
+            System.out.print("문자열을 입력하세요 : ");
+            str=sc.nextLine();
+            System.out.println(str);
+
+            /*equals() : 문자열은 == 비교가 불가능하다. 문자열이 같은지를 비교하는 기능*/
+        }while(!str.equals("exit"));
+        System.out.println("프로그램을 종료합니다.");
     }
 }
