@@ -17,6 +17,12 @@ public class Application {
         /* 단독 if-else문 흐름 확인용 메소드 호출 */
 //        b.testSimpleIfElseStatement();
         /* 중첩 if-else 문 흐름 확인용 메소드 호출 */
-        b.testnestedIfElseStatement();
+//        b.testnestedIfElseStatement();
+
+        C_ifElseif c= new C_ifElseif();
+        /*단독 if-else 문 흐름 확인용  메소드 호출*/
+//        c.testSimpleIfElseIfStatement();
+
+        c.testNestedIfElseIfStatment();
     }
 }
