@@ -1,13 +1,14 @@
 package com.ohgiraffers.section03.abstraction;
 
 public class Car {
-    private boolean isOn=true;
+    private boolean isOn;
     private int speed;
 
     public void statUp(){
         if(isOn){
             System.out.println("이미 시동이 걸려 있습니다.");
         }else {
+            this.isOn=true;
             System.out.println("시동을 걸었습니다. 이제 출발할 준비가 되어있습니다.");
         }
     }
@@ -24,7 +25,7 @@ public class Car {
         if(isOn){
             if(this.speed>0) {
                 this.speed = 0;
-                System.out.println("브레이크를 밟았스니다. 차를 멈춥니다.");
+                System.out.println("브레이크를 밟았습니다. 차를 멈춥니다.");
             }else {
                 System.out.println("차는 이미 멈춰있는 상태입니다.");
 
