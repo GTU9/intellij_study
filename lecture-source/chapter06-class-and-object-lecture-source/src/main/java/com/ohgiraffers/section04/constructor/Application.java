@@ -30,5 +30,17 @@ public class Application {
         /*2. id,pwd,name을 매개변수*/
         User user2=new User("user01","pass01","홍길동");
         System.out.println(user2.getInformation());
+
+        /*3. 모든 필드를 초기화하는 생성자를 호출하여 인스턴스 생성 후 필드값 출력*/
+        /*java.utill.Date는 뒤에서 따로 다루게 될 것이다.
+        * 기본 생성자로 인스턴스를 생성하면 현재 프로그램이 동작하는 운영체제 상의 날짜/시간 정보를 이용해 인스턴스를 생성한다.
+        * */
+        User user3=new User("user02","pass02","이순신", new java.util.Date());
+        System.out.println(user3.getInformation());
+
+        /*4. 복사 생성자를 호출하여 인스턴스 생성 후 필드값 출력*/
+        /*웨에 만든  user3과 지금 만든 user4는 동일한 필드값을 가지지만 hashcode는 다른다.*/
+        User user4=new User(user3);
+        System.out.println(user4.getInformation());
     }
 }
