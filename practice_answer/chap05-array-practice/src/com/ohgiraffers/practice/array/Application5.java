@@ -29,7 +29,7 @@ public class Application5 {
         Scanner sc= new Scanner(System.in);
         System.out.print("홀수인 양의 정수를 입력하세요 : ");
         int num = sc.nextInt();
-        if(num%2==1&&num>0){
+        if(num % 2 == 1){
             int[] narr=new int[num];
             for(int i=0;i<num;i++){
                 if(i<= num/2){
