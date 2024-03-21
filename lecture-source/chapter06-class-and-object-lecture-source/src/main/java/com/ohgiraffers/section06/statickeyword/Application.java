@@ -11,5 +11,51 @@ public class Application {
         *   명확한 목적이 존재하지 않는 이상 static 키워드 사용은 자제하자.
         *   의도적으로 static 키워드를 사용하는 대표적인 예는 singleton 객체를 생성할 때 이다.
         *  */
+
+        /*1. static 키워드를 필드에서 사용*/
+        /*StaticFieldTest 인스턴스 생성*/
+        StaticFieldTest sft1=new StaticFieldTest();
+
+        /*현재 두 필드가 가지고 있는 값 확인*/
+        System.out.println("non-static field : "+sft1.getNonStaticCount());
+        System.out.println("static field : "+sft1.getStaticCount());
+
+        /*두 필드의 값을 1씩 증가 후 다시 값 확인*/
+        sft1.increaseNonStaticCount();
+        sft1.increaseStaticCount();
+
+        System.out.println("non-static field : "+sft1.getNonStaticCount());
+        System.out.println("static field : "+sft1.getStaticCount());
+
+        /*새로운 StaticFieldTest 인스턴스 생성*/
+        StaticFieldTest sft2=new StaticFieldTest();
+
+        System.out.println("non-static field : "+sft2.getNonStaticCount());
+        System.out.println("static field : "+sft2.getStaticCount());
+
+        /*인스턴스 변수의 경우에는 sft1과 stf2 두개의 인스턴스가 서로 값을 공유하지 못하고
+        * 인스턴스를 생성할 때 마다 0으로 초기화 되었다.
+        * 하지만 static 필드의 경우에는 클래스변수 자체가 프로그램을 종료할 떄 까지 유지되고 있기 때문에 값을 유지하고 있다.
+        * 따라서 여러 개의 인스턴스가 같은 공간을 공유할 목적으로 필드에 static 키워드를 사용한다.*/
+
+        /*2.static 메소드 확인*/
+        /*2-1. non- static 메소드 호출
+        * staticMethodTest 인스턴스 생성 후 호출*/
+        StaticMethodTest smt= new StaticMethodTest();
+        smt.nonStaticMethod();
+
+        /*주의사항
+        * static 메소드도 이렇게 호출은 할 수 있다.
+        * 하지만 static 메소드의 경우에는 인스턴스를 생성하지 않고 호출하는 방식으로 사용해야 한다.
+        * static method는 정적 영역에 두고 인스턴스를 생성하지 않고 호출할 목적으로 만들기 때문에
+        * static 메소드를 호출하는 방식으로 호출해야 한다.
+        * */
+        smt.staticMethod();         //권장하지 않음
+
+        /*2-2. static 메소드 호출*/
+        /*클래스명.메소드명으로 인스턴스를 생성하지 않고 호출할 수 있다.
+        * 예) Math 클래스의 메소드들
+        * */
+        StaticMethodTest.staticMethod();            //권장함
     }
 }
