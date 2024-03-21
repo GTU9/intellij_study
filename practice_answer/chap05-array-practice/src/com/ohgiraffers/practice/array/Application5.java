@@ -1,5 +1,7 @@
 package com.ohgiraffers.practice.array;
 
+import java.util.Scanner;
+
 public class Application5 {
 
     public static void main(String[] args) {
@@ -23,6 +25,19 @@ public class Application5 {
          * -- 출력 예시 --
          * 양수 혹은 홀수만 입력해야 합니다.
          */
+
+        Scanner sc= new Scanner(System.in);
+        System.out.print("홀수인 양의 정수를 입력하세요 : ");
+        int num = sc.nextInt();
+        int[] narr=new int[num];
+        for(int i=0;i<narr.length;i++){
+            if(i<= narr.length/2){
+                narr[i]=i+1;
+            }else {
+                narr[i]=narr.length-();
+            }
+            System.out.print(narr[i]+" ");
+        }
 
     }
 
