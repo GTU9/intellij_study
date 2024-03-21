@@ -29,16 +29,22 @@ public class Application5 {
         Scanner sc= new Scanner(System.in);
         System.out.print("홀수인 양의 정수를 입력하세요 : ");
         int num = sc.nextInt();
-        int[] narr=new int[num];
-        for(int i=0;i<narr.length;i++){
-            if(i<= narr.length/2){
-                narr[i]=i+1;
-            }else {
-                narr[i]=narr.length-();
+        if(num%2==1&&num>0){
+            int[] narr=new int[num];
+            for(int i=0;i<num;i++){
+                if(i<= num/2){
+                    narr[i]=i+1;
+                }else {
+                    narr[i]=num-i;
+                }
+                System.out.print(narr[i]+" ");
             }
-            System.out.print(narr[i]+" ");
+        }else {
+            System.out.println("양수 혹은 홀수만 입력해야 합니다.");
         }
-
     }
 
 }
+//9
+//1 2 3 4 5 6 7 8 9
+//1 2 3 4 5 4 3 2 1
