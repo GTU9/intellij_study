@@ -54,25 +54,20 @@ public class UserDTO {
     public String getId() {
         return id;
     }
-
     public String getPwd() {
         return pwd;
     }
-
     public String getName() {
         return name;
     }
-
     public java.util.Date getEnrollDate() {
         return enrollDate;
     }
-
     /* 접근자로 하나씩 필드값을 확인해보기 번거롭기 때문에
      *  모든 필드의 값을 하나의 문자열로 반환하는 메소드를 필드값 확인용으로 많이 사용한다.
      * */
 
     public String getInformation() {
         return "UserDTO [id=" + this.id + ",  pwd=" + this.pwd + ", name=" + this.name + ", enrollDate=" + this.enrollDate + "]";
-
     }
 }
