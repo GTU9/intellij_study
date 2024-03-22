@@ -62,6 +62,6 @@ public class Product {
     }
 
     public String getInfomation(){
-        return "Product [code="+code+", brand="+brand+", manufaturingDate="+manufaturingDate+"]";
+        return "Product [code="+code+", brand="+brand+ ", name="+name+", price="+price+", manufaturingDate="+manufaturingDate+"]";
     }
 }
