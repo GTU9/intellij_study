@@ -2,9 +2,13 @@ package com.ohgiraffers.section01.extend;
 
 public class Car {
 
-    private boolean runningStaus;
+    private boolean runningStatus;
+
+    public Car(){
+        System.out.println("Car 클래스의 생성자 호출됨...");
+    }
     public void run(){
-        runningStaus=true;
+        runningStatus=true;
 
         System.out.println("자동차가 달립니다.");
     }
@@ -18,11 +22,11 @@ public class Car {
     }
 
     protected boolean isRunning(){
-        return runningStaus;
+        return runningStatus;
     }
 
     public void stop(){
-        runningStaus=false;
+        runningStatus=false;
         System.out.println("자동차가 멈춥니다.");
     }
 }

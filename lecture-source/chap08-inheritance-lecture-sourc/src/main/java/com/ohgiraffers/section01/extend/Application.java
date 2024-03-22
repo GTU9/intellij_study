@@ -79,6 +79,21 @@ public class Application {
         fireCar.run();
         fireCar.soundHorn();
         fireCar.stop();
+
+        /*3.상속은 확장이다. 추가적인 기능도 작성할 수 있다.*/
         fireCar.sprayWater();
+
+        /*이렇게 상소은 부모가 가진 멤버를 사용하면서 확장까지 가능하도록 해 두었다.
+        * 상속은 자식이 부모 멤버에 접근해서 자신 것처럼 사용 가능하지만, 반대의 경우는 허용되지 않는다.
+        * */
+
+        /*4. RacingCar 인스턴스 생성 후 메소드 호출해서 테스트*/
+        RacingCar racingCar=new RacingCar();
+
+        racingCar.soundHorn();
+        racingCar.run();
+        racingCar.soundHorn();
+        racingCar.stop();
+        racingCar.soundHorn();
     }
 }
