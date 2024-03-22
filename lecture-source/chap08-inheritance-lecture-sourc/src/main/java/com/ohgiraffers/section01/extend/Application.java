@@ -48,5 +48,37 @@ public class Application {
         *그래야 자식클래스로 생성한 객체들이 서로 역할을 수행해가며 유연한 코드를 작성할 수 있게 된다.
         * 동일한 역할을 가지는 모든 객체는 동일한 메세지를 수신하기는 하지만
         * 객체별로 그 메세지에 응답하는 방식은 서로 다를 수 있다. (다형성)*/
+
+        /*Car 라는 클래스를 하나 만들 것이다.*/
+        /*자동차의 역할을 수행할 수 있는 개체이다. 하지만 기본적인 기능만 수행할 수 있다.
+        * */
+
+        /*1. Car 인스턴스 생성 후 메소드 호출*/
+        Car car=new Car();
+        car.run();
+        car.soundHorn();
+        car.stop();
+        car.soundHorn();
+
+        /*정상적으로 동작한다.
+        * 하지만 자동차라고 하기에는 아직 너무 기능들이 초라하다.
+        * 상속 예시로 활용하기 위해 몇가지 목적을 가진 자동차들을 조금 더 추가할 예정이다.
+        * FireCar, RacingCar를 추가할 것이다.
+        *
+        * 소방차, 레이싱카 모두 자동차이다.
+        * 하지만 모든 자동차는 소방차 혹은 스쿨버슬 혹은 레이싱카가 아니다
+        * FireCar is a Car(o)/ Car is a FireCar(x)
+        * RacingCar is a Car(o)/ Car is a RacingCar(x)
+        *
+        * 이러한 관계가 성립되는 것을 IS-A 관계라고 한다.
+        * IS-A 관계가 성립이 되는 경우에 상속을 사용할 수 있다.*/
+
+        /*2. FireCar 인스턴스 생성 후 Car 클래스에 작성한 메소드를 사용할 수 있는지 확인*/
+        FireCar fireCar=new FireCar();
+        fireCar.soundHorn();
+        fireCar.run();
+        fireCar.soundHorn();
+        fireCar.stop();
+        fireCar.sprayWater();
     }
 }
