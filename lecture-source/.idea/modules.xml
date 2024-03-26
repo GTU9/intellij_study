@@ -2,8 +2,16 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/chap01-literal-and-lecture-source/chap01-literal-and-lecture-source.iml" filepath="$PROJECT_DIR$/chap01-literal-and-lecture-source/chap01-literal-and-lecture-source.iml" />
-      <module fileurl="file://$PROJECT_DIR$/chap02-operator-lecture-source/chap02-operator-lecture-source.iml" filepath="$PROJECT_DIR$/chap02-operator-lecture-source/chap02-operator-lecture-source.iml" />
+      <module fileurl="file://$PROJECT_DIR$/chap01-literal-and-lecture-source/chap01-literal-and-lecture-source1.iml" filepath="$PROJECT_DIR$/chap01-literal-and-lecture-source/chap01-literal-and-lecture-source1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/chap02-operator-lecture-source/chap02-operator-lecture-source1.iml" filepath="$PROJECT_DIR$/chap02-operator-lecture-source/chap02-operator-lecture-source1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/chap03-method-and-api-lecture-source/chap03-method-and-api-lecture-source.iml" filepath="$PROJECT_DIR$/chap03-method-and-api-lecture-source/chap03-method-and-api-lecture-source.iml" />
+      <module fileurl="file://$PROJECT_DIR$/chap04-control-flow-lecture-source/chap04-control-flow-lecture-source.iml" filepath="$PROJECT_DIR$/chap04-control-flow-lecture-source/chap04-control-flow-lecture-source.iml" />
+      <module fileurl="file://$PROJECT_DIR$/chap05-array-lecture-source/chap05-array-lecture-source.iml" filepath="$PROJECT_DIR$/chap05-array-lecture-source/chap05-array-lecture-source.iml" />
+      <module fileurl="file://$PROJECT_DIR$/chap06-class-and-object-lecture-source/chap06-class-and-object-lecture-source.iml" filepath="$PROJECT_DIR$/chap06-class-and-object-lecture-source/chap06-class-and-object-lecture-source.iml" />
+      <module fileurl="file://$PROJECT_DIR$/chap07-object-array-lecture-source/chap07-object-array-lecture-source.iml" filepath="$PROJECT_DIR$/chap07-object-array-lecture-source/chap07-object-array-lecture-source.iml" />
+      <module fileurl="file://$PROJECT_DIR$/chap08-inheritance-lecture-sourc/chap08-inheritance-lecture-sourc.iml" filepath="$PROJECT_DIR$/chap08-inheritance-lecture-sourc/chap08-inheritance-lecture-sourc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/chap09-polymorphism-lecture-source/chap09-polymorphism-lecture-source.iml" filepath="$PROJECT_DIR$/chap09-polymorphism-lecture-source/chap09-polymorphism-lecture-source.iml" />
+      <module fileurl="file://$PROJECT_DIR$/chap10-api-lecture-source/chap10-api-lecture-source.iml" filepath="$PROJECT_DIR$/chap10-api-lecture-source/chap10-api-lecture-source.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/lecture-source.iml" filepath="$PROJECT_DIR$/.idea/lecture-source.iml" />
     </modules>
   </component>

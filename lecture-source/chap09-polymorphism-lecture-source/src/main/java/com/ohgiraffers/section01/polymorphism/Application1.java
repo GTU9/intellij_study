@@ -52,7 +52,115 @@ public class Application1 {
 		 *  하지만 FireCar와 RacingCar 모두 Car라는 타입도 함께 가지고 있다.
 		 *  이것이 서로 다른 타입을 여러 개 가지고 있다는 의미이다.
 		 *  */
-		
+
+		/*Animal 인스턴스 생성 후 메소드 호출 확인*/
+		System.out.println("Animal 생성------------------------------");
+		Animal animal=new Animal();
+		animal.eat();
+		animal.run();
+		animal.cry();
+
+		/*Rabbit 인스턴스 생성 후 메소드 호출 확인*/
+		System.out.println("Rabbit 생성------------------------------");
+		Rabbit rabbit=new Rabbit();
+		rabbit.eat();
+		rabbit.run();
+		rabbit.cry();
+		rabbit.jump();
+
+		/*Tiger 인스턴스 생성 후 메소드 호출 확인*/
+		System.out.println("Tiger 생성------------------------------");
+		Tiger tiger=new Tiger();
+		tiger.eat();
+		tiger.run();
+		tiger.bite();
+
+		/*Rbbit과 Tiger는 Animal 클래스를 상속받았다.
+		* 따라서 Rabbit은 Rabbit 타입이기도 하면서, Animal 타입이기도 하며
+		* Tiger는 Tiger 타입이면서, Animal 타입이기도 하다.
+		* */
+
+		Animal a1=new Rabbit();
+		Animal a2=new Tiger();
+
+		/*하지만 반대로 Animal은  Animal이지 Tiger나 Rabbit이 아니다.
+		* 그래서 이렇게 하면 에러난다.
+		* */
+
+//		Rabbit r=new Animal();
+//		Tiger t=new Animal();
+
+		/*동적 바인딩 확인*/
+		/*동적바인딩
+		* 컴파일 당시에는 해당타입의 메소드와 연결되어 있다가,
+		* 런타임 당시에는 실제 객체가 가진 오버라이딩된 메소드로 바인딩이 바뀌어 동작하는 것을 의미한다.*/
+		System.out.println("동적바인딩 확인------------------------------");
+		a1.cry();
+		a2.cry();
+
+		/*하나의 메소드 호출로 각기 다른 객체의 다른 메소드를 동작시키게 한다.*/
+
+		/*하지만 현재 레퍼런스변수의 타입은 Animal이기 때문에
+		* Rabbit과 Tiger가 가지고 있는 고융한 기능을 동작시키지 못한다.
+		* */
+//		a1.jump();
+//		a2.bite();
+
+		/*타입 형변환 확인*/
+		/*객체별로 고유한 기능을 동작시키기 위해서는 레퍼런스 변수를 형변환하여 Rabbit과 Tiger로 변경해야
+		* 메소드 호출이 가능하다.
+		* class type casting : 클래스 형변환
+		* 타입 형변환 시 실제 인스턴스와 타입이 일치하지 않은 경우 ClassCastException이 발생할 수 있다.
+		* */
+		System.out.println("클래스타입 형변환 확인------------------------------");
+		((Rabbit)a1).jump();
+		((Tiger)a2).bite();
+
+		/*타입 형변환을 잘못 하는 경우
+		* 컴파일시에는 문제가 되지 않지만 런타임시 Exception이 발생한다.
+		* */
+//		((Tiger)a1).bite();
+
+		/*instaceof 연산자 사용 확인*/
+		/*레퍼런스변수가 참조하는 실제 인스턴스가 원하는 타입과 맞는지 비교하는 연산자 instanceof*/
+
+		System.out.println("instanceof 확인------------------------------");
+		System.out.println("a1이 Tiger 타입인지 확인 : "+(a1 instanceof Tiger));
+		System.out.println("a1이 Rabbit 타입인지 확인 : "+(a1 instanceof Rabbit));
+		/*상속 받은 타입도 함께 가지고 있다 (다형성)*/
+		System.out.println("a1이 Animal 타입인지 확인 : "+(a1 instanceof Animal));
+		/*모든 클래스는  Object의 후손이다.*/
+		System.out.println("a1이 Object 타입인지 확인 : "+(a1 instanceof Object));
+
+		/*instanceof 연산자를 이용해서 하당 타입이 맞는 경우에만 클래스형변환을 적용한다.*/
+		if(a1 instanceof Rabbit){
+			((Rabbit)a1).jump();
+		}
+
+		if(a1 instanceof Tiger){
+			((Tiger)a1).bite();
+		}
+
+		/*클래스의 업캐스팅과 다운캐스팅 확인*/
+		/*클래스 형변환은 up-casting과 down-casting으로 구분할 수 있다.
+		* up-casting : 상위 타입으로 형변환
+		* down-casting : 하위 타입으로 형변환
+		* 또한 작성 여부에 따라 명시적으로 묵시적 두 가지로 구분된다.
+		* */
+
+		/*묵시적 형변환
+		* up-casting의 경우 묵시적 형변환이 적용된다.
+		* */
+		Animal animal1= (Animal) new Rabbit();	//up-casting 명시적 형변환
+		Animal animal2= new Rabbit();			//up-casting 묵시적 형변환
+
+		Rabbit rabbit1= (Rabbit) animal1;		//Down-casting 명시적 형변환
+//		Rabbit rabbit1= animal2;		//Down-casting 명시적 형변환
+
+
+
+
+
 
 	}
 }
