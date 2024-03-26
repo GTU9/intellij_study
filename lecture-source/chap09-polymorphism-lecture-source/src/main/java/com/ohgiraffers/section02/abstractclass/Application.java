@@ -30,6 +30,8 @@ public class Application {
 		 *  예) public abstract void method();
 		 *  */
 
+		/*설명. */
+
 
 	}
 		
