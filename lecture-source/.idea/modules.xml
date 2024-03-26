@@ -12,6 +12,9 @@
       <module fileurl="file://$PROJECT_DIR$/chap08-inheritance-lecture-sourc/chap08-inheritance-lecture-sourc.iml" filepath="$PROJECT_DIR$/chap08-inheritance-lecture-sourc/chap08-inheritance-lecture-sourc.iml" />
       <module fileurl="file://$PROJECT_DIR$/chap09-polymorphism-lecture-source/chap09-polymorphism-lecture-source.iml" filepath="$PROJECT_DIR$/chap09-polymorphism-lecture-source/chap09-polymorphism-lecture-source.iml" />
       <module fileurl="file://$PROJECT_DIR$/chap10-api-lecture-source/chap10-api-lecture-source.iml" filepath="$PROJECT_DIR$/chap10-api-lecture-source/chap10-api-lecture-source.iml" />
+      <module fileurl="file://$PROJECT_DIR$/chap11-generics-lecture-source/chap11-generics-lecture-source.iml" filepath="$PROJECT_DIR$/chap11-generics-lecture-source/chap11-generics-lecture-source.iml" />
+      <module fileurl="file://$PROJECT_DIR$/chap12-collection-lecture-source/chap12-collection-lecture-source.iml" filepath="$PROJECT_DIR$/chap12-collection-lecture-source/chap12-collection-lecture-source.iml" />
+      <module fileurl="file://$PROJECT_DIR$/chap13-exception-lecture-source/chap13-exception-lecture-source.iml" filepath="$PROJECT_DIR$/chap13-exception-lecture-source/chap13-exception-lecture-source.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/lecture-source.iml" filepath="$PROJECT_DIR$/.idea/lecture-source.iml" />
     </modules>
   </component>
