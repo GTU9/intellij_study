@@ -24,5 +24,24 @@ public class Application {
 
 		/* 설명. 추상클래스와 인터페이스의 특징과 차이점도 면접 질문에서 단골 질문으로 등장하니 잘 정리해두자 */
 
+		/* 설명. 인스턴스를 생성하지 못하고, 생성자 자체가 존재하지 않는다. */
+//		InterProduct interProduct = new InterProduct();		//에러남
+
+		/* 설명. 레퍼런스 타입으로만 사용이 가능하다. */
+		InterProduct interProduct = new Product();
+
+		/* 설명. 인터페이스의 추상메소드 오버라이딩한 메소드로 동적바인딩에 의해 호출됨 */
+		interProduct.nonStaticMethod();
+		interProduct.abstMethod();
+
+		/* 설명. 오버라이딩 하지 않으면 인터페이스의 default 메소드로 호출됨 */
+		interProduct.defaultMethod();
+
+		/* 설명. static 메소드는 인터페이스명.메소드명(); 으로 호출함 */
+		InterProduct.staticMethod();
+
+		/* 설명. 상수 필드 접근도 인터페이스명.필드명 으로 접근함 */
+		System.out.println(InterProduct.MAX_NUM);
+		System.out.println(InterProduct.MIN_NUM);
 	}
 }
