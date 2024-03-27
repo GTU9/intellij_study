@@ -15,6 +15,7 @@
       <module fileurl="file://$PROJECT_DIR$/chap11-generics-lecture-source/chap11-generics-lecture-source.iml" filepath="$PROJECT_DIR$/chap11-generics-lecture-source/chap11-generics-lecture-source.iml" />
       <module fileurl="file://$PROJECT_DIR$/chap12-collection-lecture-source/chap12-collection-lecture-source.iml" filepath="$PROJECT_DIR$/chap12-collection-lecture-source/chap12-collection-lecture-source.iml" />
       <module fileurl="file://$PROJECT_DIR$/chap13-exception-lecture-source/chap13-exception-lecture-source.iml" filepath="$PROJECT_DIR$/chap13-exception-lecture-source/chap13-exception-lecture-source.iml" />
+      <module fileurl="file://$PROJECT_DIR$/chap14-io-lecture-source/chap14-io-lecture-source.iml" filepath="$PROJECT_DIR$/chap14-io-lecture-source/chap14-io-lecture-source.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/lecture-source.iml" filepath="$PROJECT_DIR$/.idea/lecture-source.iml" />
     </modules>
   </component>
