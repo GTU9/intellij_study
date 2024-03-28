@@ -1,0 +1,552 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="d0f004af-ea75-4948-9e33-f43775985996" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/lecture-source.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/chap04_control_flow_lecture_source_1_0_SNAPSHOT.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/chap04_control_flow_lecture_source_1_0_SNAPSHOT1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/gradle_wrapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/gradle_wrapper1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/gradle_wrapper10.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/gradle_wrapper11.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/gradle_wrapper12.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/gradle_wrapper13.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/gradle_wrapper2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/gradle_wrapper3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/gradle_wrapper4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/gradle_wrapper5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/gradle_wrapper6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/gradle_wrapper7.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/gradle_wrapper8.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/gradle_wrapper9.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap01-literal-and-lecture-source/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap01-literal-and-lecture-source/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap01-literal-and-lecture-source/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap01-literal-and-lecture-source/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap01-literal-and-lecture-source/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap01-literal-and-lecture-source/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap01-literal-and-lecture-source/chap01-literal-and-lecture-source1.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap01-literal-and-lecture-source/src/com/ohgirffers/section01/literal/Application1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap01-literal-and-lecture-source/src/com/ohgirffers/section01/literal/Application2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap01-literal-and-lecture-source/src/com/ohgirffers/section01/literal/Application3.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap01-literal-and-lecture-source/src/com/ohgirffers/section02/variable/Application1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap01-literal-and-lecture-source/src/com/ohgirffers/section02/variable/Application2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap01-literal-and-lecture-source/src/com/ohgirffers/section02/variable/Application3.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap01-literal-and-lecture-source/src/com/ohgirffers/section03/constant/Application1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap01-literal-and-lecture-source/src/com/ohgirffers/section03/constant/Application2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap01-literal-and-lecture-source/src/com/ohgirffers/section04/overflow/Application1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap01-literal-and-lecture-source/src/com/ohgirffers/section05/typecasting/Application1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap01-literal-and-lecture-source/src/com/ohgirffers/section05/typecasting/Application2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap01-literal-and-lecture-source/src/com/ohgirffers/section05/typecasting/Application3.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap01-literal-and-lecture-source/src/com/ohgirffers/section05/typecasting/Application4.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap02-operator-lecture-source/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap02-operator-lecture-source/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap02-operator-lecture-source/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap02-operator-lecture-source/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap02-operator-lecture-source/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap02-operator-lecture-source/chap02-operator-lecture-source1.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap02-operator-lecture-source/src/com/ohgiraffers/section01/arithmetic_operator/Application1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap02-operator-lecture-source/src/com/ohgiraffers/section02/assignment_operator/Application1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap02-operator-lecture-source/src/com/ohgiraffers/section03/increment_decrement_operator/Application1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap02-operator-lecture-source/src/com/ohgiraffers/section04/comparison_operator/Application1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap02-operator-lecture-source/src/com/ohgiraffers/section05/logical_operator/Application1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap02-operator-lecture-source/src/com/ohgiraffers/section05/logical_operator/Application2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap02-operator-lecture-source/src/com/ohgiraffers/section05/logical_operator/Application3.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap02-operator-lecture-source/src/com/ohgiraffers/section06/ternary_operator/Application1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap03-method-and-api-lecture-source/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap03-method-and-api-lecture-source/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap03-method-and-api-lecture-source/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap03-method-and-api-lecture-source/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap03-method-and-api-lecture-source/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap03-method-and-api-lecture-source/chap03-method-and-api-lecture-source.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap03-method-and-api-lecture-source/src/com/ohgiraffers/section01/method/Application1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap03-method-and-api-lecture-source/src/com/ohgiraffers/section01/method/Application2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap03-method-and-api-lecture-source/src/com/ohgiraffers/section01/method/Application3.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap03-method-and-api-lecture-source/src/com/ohgiraffers/section01/method/Application4.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap03-method-and-api-lecture-source/src/com/ohgiraffers/section01/method/Application5.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap03-method-and-api-lecture-source/src/com/ohgiraffers/section01/method/Application6.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap03-method-and-api-lecture-source/src/com/ohgiraffers/section01/method/Application7.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap03-method-and-api-lecture-source/src/com/ohgiraffers/section01/method/Application8.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap03-method-and-api-lecture-source/src/com/ohgiraffers/section01/method/Application9.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap03-method-and-api-lecture-source/src/com/ohgiraffers/section01/method/Calculator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap03-method-and-api-lecture-source/src/com/ohgiraffers/section02/package_and_import/Application1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap03-method-and-api-lecture-source/src/com/ohgiraffers/section02/package_and_import/Application2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap03-method-and-api-lecture-source/src/com/ohgiraffers/section03/math/Application1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap03-method-and-api-lecture-source/src/com/ohgiraffers/section03/math/Application2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap03-method-and-api-lecture-source/src/com/ohgiraffers/section03/math/Application3.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap03-method-and-api-lecture-source/src/com/ohgiraffers/section04/scanner/Application1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap03-method-and-api-lecture-source/src/com/ohgiraffers/section04/scanner/Application2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap03-method-and-api-lecture-source/src/com/ohgiraffers/section04/scanner/Application3.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap04-control-flow-lecture-source/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap04-control-flow-lecture-source/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap04-control-flow-lecture-source/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap04-control-flow-lecture-source/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap04-control-flow-lecture-source/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap04-control-flow-lecture-source/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap04-control-flow-lecture-source/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap04-control-flow-lecture-source/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap04-control-flow-lecture-source/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap04-control-flow-lecture-source/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap04-control-flow-lecture-source/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap04-control-flow-lecture-source/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap04-control-flow-lecture-source/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap04-control-flow-lecture-source/src/main/java/com/ohgiraffers/section01/conditional/A_if.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap04-control-flow-lecture-source/src/main/java/com/ohgiraffers/section01/conditional/Application.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap04-control-flow-lecture-source/src/main/java/com/ohgiraffers/section01/conditional/B_ifElse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap04-control-flow-lecture-source/src/main/java/com/ohgiraffers/section01/conditional/C_ifElseif.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap04-control-flow-lecture-source/src/main/java/com/ohgiraffers/section02/looping/A_for.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap04-control-flow-lecture-source/src/main/java/com/ohgiraffers/section02/looping/A_nestedFor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap04-control-flow-lecture-source/src/main/java/com/ohgiraffers/section02/looping/Application.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap04-control-flow-lecture-source/src/main/java/com/ohgiraffers/section02/looping/B_while.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap04-control-flow-lecture-source/src/main/java/com/ohgiraffers/section02/looping/C_doWhile.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap04-control-flow-lecture-source/src/main/java/com/ohgiraffers/section03/branching/A_break.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap04-control-flow-lecture-source/src/main/java/com/ohgiraffers/section03/branching/Application.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap04-control-flow-lecture-source/src/main/java/com/ohgiraffers/section03/branching/B_continue.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap05-array-lecture-source/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap05-array-lecture-source/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap05-array-lecture-source/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap05-array-lecture-source/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap05-array-lecture-source/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap05-array-lecture-source/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap05-array-lecture-source/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap05-array-lecture-source/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap05-array-lecture-source/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap05-array-lecture-source/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap05-array-lecture-source/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap05-array-lecture-source/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap05-array-lecture-source/src/main/java/com/ohgiraffers/section01/array/Applicaion3.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap05-array-lecture-source/src/main/java/com/ohgiraffers/section01/array/Application1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap05-array-lecture-source/src/main/java/com/ohgiraffers/section01/array/Application2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap05-array-lecture-source/src/main/java/com/ohgiraffers/section01/array/Application4.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap05-array-lecture-source/src/main/java/com/ohgiraffers/section01/array/Application5.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap05-array-lecture-source/src/main/java/com/ohgiraffers/section02/demensinal/Application1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap05-array-lecture-source/src/main/java/com/ohgiraffers/section02/demensinal/Application2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap05-array-lecture-source/src/main/java/com/ohgiraffers/section02/demensinal/Application3.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap05-array-lecture-source/src/main/java/com/ohgiraffers/section02/demensinal/Application4.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap05-array-lecture-source/src/main/java/com/ohgiraffers/section03/copy/Application1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap05-array-lecture-source/src/main/java/com/ohgiraffers/section03/copy/Application2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap05-array-lecture-source/src/main/java/com/ohgiraffers/section03/copy/Application3.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap05-array-lecture-source/src/main/java/com/ohgiraffers/section03/copy/Application4.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap06-class-and-object-lecture-source/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap06-class-and-object-lecture-source/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap06-class-and-object-lecture-source/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap06-class-and-object-lecture-source/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap06-class-and-object-lecture-source/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap06-class-and-object-lecture-source/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap06-class-and-object-lecture-source/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap06-class-and-object-lecture-source/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap06-class-and-object-lecture-source/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap06-class-and-object-lecture-source/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap06-class-and-object-lecture-source/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap06-class-and-object-lecture-source/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap06-class-and-object-lecture-source/src/main/java/com/ohgiraffers/section01/user_type/Application.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap06-class-and-object-lecture-source/src/main/java/com/ohgiraffers/section01/user_type/Member.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap06-class-and-object-lecture-source/src/main/java/com/ohgiraffers/section02/encapsulation/problem1/Application.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap06-class-and-object-lecture-source/src/main/java/com/ohgiraffers/section02/encapsulation/problem1/Monster.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap06-class-and-object-lecture-source/src/main/java/com/ohgiraffers/section02/encapsulation/problem2/Application.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap06-class-and-object-lecture-source/src/main/java/com/ohgiraffers/section02/encapsulation/problem2/Monster.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap06-class-and-object-lecture-source/src/main/java/com/ohgiraffers/section02/encapsulation/problem3/Application.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap06-class-and-object-lecture-source/src/main/java/com/ohgiraffers/section02/encapsulation/problem3/Monster.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap06-class-and-object-lecture-source/src/main/java/com/ohgiraffers/section02/encapsulation/problem4/Application.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap06-class-and-object-lecture-source/src/main/java/com/ohgiraffers/section02/encapsulation/problem4/Monster.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap06-class-and-object-lecture-source/src/main/java/com/ohgiraffers/section03/abstraction/Application.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap06-class-and-object-lecture-source/src/main/java/com/ohgiraffers/section03/abstraction/Car.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap06-class-and-object-lecture-source/src/main/java/com/ohgiraffers/section03/abstraction/CarRacer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap06-class-and-object-lecture-source/src/main/java/com/ohgiraffers/section03/dto/Application.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap06-class-and-object-lecture-source/src/main/java/com/ohgiraffers/section03/dto/MemberDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap06-class-and-object-lecture-source/src/main/java/com/ohgiraffers/section04/constructor/Application.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap06-class-and-object-lecture-source/src/main/java/com/ohgiraffers/section04/constructor/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap06-class-and-object-lecture-source/src/main/java/com/ohgiraffers/section04/dto/Application.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap06-class-and-object-lecture-source/src/main/java/com/ohgiraffers/section04/dto/UserDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap06-class-and-object-lecture-source/src/main/java/com/ohgiraffers/section05/overloading/OverloadingTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap06-class-and-object-lecture-source/src/main/java/com/ohgiraffers/section05/parameter/Application.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap06-class-and-object-lecture-source/src/main/java/com/ohgiraffers/section05/parameter/ParameterTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap06-class-and-object-lecture-source/src/main/java/com/ohgiraffers/section05/parameter/RectAngle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap06-class-and-object-lecture-source/src/main/java/com/ohgiraffers/section06/finalkeyword/FinalFieldTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap06-class-and-object-lecture-source/src/main/java/com/ohgiraffers/section06/singleton/Application.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap06-class-and-object-lecture-source/src/main/java/com/ohgiraffers/section06/singleton/EagerSingleton.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap06-class-and-object-lecture-source/src/main/java/com/ohgiraffers/section06/singleton/LazySingleton.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap06-class-and-object-lecture-source/src/main/java/com/ohgiraffers/section06/statickeyword/Application.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap06-class-and-object-lecture-source/src/main/java/com/ohgiraffers/section06/statickeyword/StaticFieldTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap06-class-and-object-lecture-source/src/main/java/com/ohgiraffers/section06/statickeyword/StaticMethodTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap06-class-and-object-lecture-source/src/main/java/com/ohgiraffers/section07/kindsofvariable/KindsOfVariable.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap06-class-and-object-lecture-source/src/main/java/com/ohgiraffers/section08/initblock/Application.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap06-class-and-object-lecture-source/src/main/java/com/ohgiraffers/section08/initblock/Product.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap07-object-array-lecture-source/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap07-object-array-lecture-source/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap07-object-array-lecture-source/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap07-object-array-lecture-source/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap07-object-array-lecture-source/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap07-object-array-lecture-source/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap07-object-array-lecture-source/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap07-object-array-lecture-source/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap07-object-array-lecture-source/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap07-object-array-lecture-source/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap07-object-array-lecture-source/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap07-object-array-lecture-source/src/main/java/com/ohgiraffers/section01/init/Application.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap07-object-array-lecture-source/src/main/java/com/ohgiraffers/section01/init/Car.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap07-object-array-lecture-source/src/main/java/com/ohgiraffers/section02/uses/Application.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap07-object-array-lecture-source/src/main/java/com/ohgiraffers/section02/uses/Member.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap07-object-array-lecture-source/src/main/java/com/ohgiraffers/section02/uses/MemberFinder.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap07-object-array-lecture-source/src/main/java/com/ohgiraffers/section02/uses/MemberRegister.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap07-object-array-lecture-source/src/main/java/com/ohgiraffers/section02/uses/MemberRepositoty.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap07-object-array-lecture-source/src/main/java/com/ohgiraffers/section02/uses/MemberService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap08-inheritance-lecture-sourc/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap08-inheritance-lecture-sourc/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap08-inheritance-lecture-sourc/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap08-inheritance-lecture-sourc/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap08-inheritance-lecture-sourc/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap08-inheritance-lecture-sourc/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap08-inheritance-lecture-sourc/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap08-inheritance-lecture-sourc/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap08-inheritance-lecture-sourc/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap08-inheritance-lecture-sourc/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap08-inheritance-lecture-sourc/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap08-inheritance-lecture-sourc/src/main/java/com/ohgiraffers/section01/extend/Application.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap08-inheritance-lecture-sourc/src/main/java/com/ohgiraffers/section01/extend/Car.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap08-inheritance-lecture-sourc/src/main/java/com/ohgiraffers/section01/extend/FireCar.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap08-inheritance-lecture-sourc/src/main/java/com/ohgiraffers/section01/extend/RacingCar.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap08-inheritance-lecture-sourc/src/main/java/com/ohgiraffers/section02/superkeyword/Application.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap08-inheritance-lecture-sourc/src/main/java/com/ohgiraffers/section02/superkeyword/Computer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap08-inheritance-lecture-sourc/src/main/java/com/ohgiraffers/section02/superkeyword/Product.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap08-inheritance-lecture-sourc/src/main/java/com/ohgiraffers/section03/overriding/SubClass.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap08-inheritance-lecture-sourc/src/main/java/com/ohgiraffers/section03/overriding/SuperClass.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap09-polymorphism-lecture-source/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap09-polymorphism-lecture-source/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap09-polymorphism-lecture-source/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap09-polymorphism-lecture-source/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap09-polymorphism-lecture-source/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap09-polymorphism-lecture-source/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap09-polymorphism-lecture-source/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap09-polymorphism-lecture-source/src/main/java/com/ohgiraffers/section01/polymorphism/Animal.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap09-polymorphism-lecture-source/src/main/java/com/ohgiraffers/section01/polymorphism/Application1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap09-polymorphism-lecture-source/src/main/java/com/ohgiraffers/section01/polymorphism/Application2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap09-polymorphism-lecture-source/src/main/java/com/ohgiraffers/section01/polymorphism/Application3.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap09-polymorphism-lecture-source/src/main/java/com/ohgiraffers/section01/polymorphism/Application4.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap09-polymorphism-lecture-source/src/main/java/com/ohgiraffers/section01/polymorphism/Rabbit.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap09-polymorphism-lecture-source/src/main/java/com/ohgiraffers/section01/polymorphism/Tiger.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap09-polymorphism-lecture-source/src/main/java/com/ohgiraffers/section02/abstractclass/Application.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap09-polymorphism-lecture-source/src/main/java/com/ohgiraffers/section02/abstractclass/Product.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap09-polymorphism-lecture-source/src/main/java/com/ohgiraffers/section02/abstractclass/SmartPhone.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap09-polymorphism-lecture-source/src/main/java/com/ohgiraffers/section03/interfaceimplements/Application.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap09-polymorphism-lecture-source/src/main/java/com/ohgiraffers/section03/interfaceimplements/InterProduct.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap09-polymorphism-lecture-source/src/main/java/com/ohgiraffers/section03/interfaceimplements/Product.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap10-api-lecture-source/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap10-api-lecture-source/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap10-api-lecture-source/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap10-api-lecture-source/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap10-api-lecture-source/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap10-api-lecture-source/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap10-api-lecture-source/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap10-api-lecture-source/src/main/java/com/ohgiraffers/section01/object/book/Book.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap10-api-lecture-source/src/main/java/com/ohgiraffers/section01/object/run/Application1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap10-api-lecture-source/src/main/java/com/ohgiraffers/section01/object/run/Application2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap10-api-lecture-source/src/main/java/com/ohgiraffers/section01/object/run/Application3.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap10-api-lecture-source/src/main/java/com/ohgiraffers/section02/string/Application1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap10-api-lecture-source/src/main/java/com/ohgiraffers/section02/string/Application2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap10-api-lecture-source/src/main/java/com/ohgiraffers/section02/string/Application3.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap10-api-lecture-source/src/main/java/com/ohgiraffers/section02/string/Application4.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap10-api-lecture-source/src/main/java/com/ohgiraffers/section02/stringbuilder/Application1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap10-api-lecture-source/src/main/java/com/ohgiraffers/section02/stringbuilder/Application2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap10-api-lecture-source/src/main/java/com/ohgiraffers/section03/wrapper/Application1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap10-api-lecture-source/src/main/java/com/ohgiraffers/section03/wrapper/Application2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap10-api-lecture-source/src/main/java/com/ohgiraffers/section03/wrapper/Application3.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap10-api-lecture-source/src/main/java/com/ohgiraffers/section04/calendar/Application1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap10-api-lecture-source/src/main/java/com/ohgiraffers/section04/calendar/Application2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap10-api-lecture-source/src/main/java/com/ohgiraffers/section05/time/Application1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap10-api-lecture-source/src/main/java/com/ohgiraffers/section05/time/Application2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap10-api-lecture-source/src/main/java/com/ohgiraffers/section05/time/Application3.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap10-api-lecture-source/src/main/java/com/ohgiraffers/section05/time/Application4.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap10-api-lecture-source/src/main/java/com/ohgiraffers/section05/time/Application5.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap11-generics-lecture-source/chap11-generics-lecture-source.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap11-generics-lecture-source/src/main/java/com/ohgiraffers/section01/generic/Application.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap11-generics-lecture-source/src/main/java/com/ohgiraffers/section01/generic/GenericTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap11-generics-lecture-source/src/main/java/com/ohgiraffers/section02/extend/Animal.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap11-generics-lecture-source/src/main/java/com/ohgiraffers/section02/extend/Bunny.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap11-generics-lecture-source/src/main/java/com/ohgiraffers/section02/extend/DrunkenBunny.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap11-generics-lecture-source/src/main/java/com/ohgiraffers/section02/extend/Mammal.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap11-generics-lecture-source/src/main/java/com/ohgiraffers/section02/extend/Rabbit.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap11-generics-lecture-source/src/main/java/com/ohgiraffers/section02/extend/RabbitFarm.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap11-generics-lecture-source/src/main/java/com/ohgiraffers/section02/extend/Reptile.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap11-generics-lecture-source/src/main/java/com/ohgiraffers/section02/extend/Snake.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap11-generics-lecture-source/src/main/java/com/ohgiraffers/section02/extend/WildCardFarm.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap11-generics-lecture-source/src/main/java/com/ohgiraffers/section02/extend/run/Application1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap11-generics-lecture-source/src/main/java/com/ohgiraffers/section02/extend/run/Application2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap12-collection-lecture-source/chap12-collection-lecture-source.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap12-collection-lecture-source/src/main/java/com/ohgiraffers/section01/list/comparator/AscendingPrice.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap12-collection-lecture-source/src/main/java/com/ohgiraffers/section01/list/dto/BookDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap12-collection-lecture-source/src/main/java/com/ohgiraffers/section01/list/run/Application1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap12-collection-lecture-source/src/main/java/com/ohgiraffers/section01/list/run/Application2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap12-collection-lecture-source/src/main/java/com/ohgiraffers/section01/list/run/Application3.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap12-collection-lecture-source/src/main/java/com/ohgiraffers/section01/list/run/Application4.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap12-collection-lecture-source/src/main/java/com/ohgiraffers/section01/list/run/Application5.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap12-collection-lecture-source/src/main/java/com/ohgiraffers/section02/set/run/Application1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap12-collection-lecture-source/src/main/java/com/ohgiraffers/section02/set/run/Application2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap12-collection-lecture-source/src/main/java/com/ohgiraffers/section02/set/run/Application3.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap12-collection-lecture-source/src/main/java/com/ohgiraffers/section03/map/run/Application1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap12-collection-lecture-source/src/main/java/com/ohgiraffers/section03/map/run/Application2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap13-exception-lecture-source/chap13-exception-lecture-source.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap13-exception-lecture-source/src/main/java/com/ohgiraffers/section01/exception/Application1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap13-exception-lecture-source/src/main/java/com/ohgiraffers/section01/exception/Application2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap13-exception-lecture-source/src/main/java/com/ohgiraffers/section01/exception/Application3.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap13-exception-lecture-source/src/main/java/com/ohgiraffers/section01/exception/ExceptionTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap13-exception-lecture-source/src/main/java/com/ohgiraffers/section02/userexception/Application1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap13-exception-lecture-source/src/main/java/com/ohgiraffers/section02/userexception/Application2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap13-exception-lecture-source/src/main/java/com/ohgiraffers/section02/userexception/Application3.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap13-exception-lecture-source/src/main/java/com/ohgiraffers/section02/userexception/ExceptionTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap13-exception-lecture-source/src/main/java/com/ohgiraffers/section02/userexception/exception/MoneyNegativeException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap13-exception-lecture-source/src/main/java/com/ohgiraffers/section02/userexception/exception/NegativeException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap13-exception-lecture-source/src/main/java/com/ohgiraffers/section02/userexception/exception/NotEnoughMoneyException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap13-exception-lecture-source/src/main/java/com/ohgiraffers/section02/userexception/exception/PriceNegativeException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap13-exception-lecture-source/src/main/java/com/ohgiraffers/section03/uses/Application1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap13-exception-lecture-source/src/main/java/com/ohgiraffers/section03/uses/Application2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap13-exception-lecture-source/src/main/java/com/ohgiraffers/section04/override/SubClass.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap13-exception-lecture-source/src/main/java/com/ohgiraffers/section04/override/SuperClass.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap14-io-lecture-source/chap14-io-lecture-source.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap14-io-lecture-source/src/main/java/com/ohgiraffers/section01/file/Application.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap14-io-lecture-source/src/main/java/com/ohgiraffers/section02/stream/Application1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap14-io-lecture-source/src/main/java/com/ohgiraffers/section02/stream/Application2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap14-io-lecture-source/src/main/java/com/ohgiraffers/section02/stream/Application3.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap14-io-lecture-source/src/main/java/com/ohgiraffers/section02/stream/Application4.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap14-io-lecture-source/src/main/java/com/ohgiraffers/section02/stream/testInputStream.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap14-io-lecture-source/src/main/java/com/ohgiraffers/section02/stream/testOutputStream.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap14-io-lecture-source/src/main/java/com/ohgiraffers/section02/stream/testReader.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap14-io-lecture-source/src/main/java/com/ohgiraffers/section02/stream/testWriter.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap14-io-lecture-source/src/main/java/com/ohgiraffers/section03/filterstream/Application1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap14-io-lecture-source/src/main/java/com/ohgiraffers/section03/filterstream/Application2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap14-io-lecture-source/src/main/java/com/ohgiraffers/section03/filterstream/Application3.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap14-io-lecture-source/src/main/java/com/ohgiraffers/section03/filterstream/Application4.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap14-io-lecture-source/src/main/java/com/ohgiraffers/section03/filterstream/dto/MemberDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap14-io-lecture-source/src/main/java/com/ohgiraffers/section03/filterstream/score.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap14-io-lecture-source/src/main/java/com/ohgiraffers/section03/filterstream/testBuffered.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap14-io-lecture-source/src/main/java/com/ohgiraffers/section03/filterstream/testObjectStream.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chap09-polymorphism-lecture-source/com/ohgiraffers/section01/polymorphism/Animal.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chap09-polymorphism-lecture-source/com/ohgiraffers/section01/polymorphism/Application1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chap09-polymorphism-lecture-source/com/ohgiraffers/section01/polymorphism/Application2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chap09-polymorphism-lecture-source/com/ohgiraffers/section01/polymorphism/Application3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chap09-polymorphism-lecture-source/com/ohgiraffers/section01/polymorphism/Application4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chap09-polymorphism-lecture-source/com/ohgiraffers/section01/polymorphism/Rabbit.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chap09-polymorphism-lecture-source/com/ohgiraffers/section01/polymorphism/Tiger.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chap09-polymorphism-lecture-source/com/ohgiraffers/section02/abstractclass/Application.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chap09-polymorphism-lecture-source/com/ohgiraffers/section02/abstractclass/Product.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chap09-polymorphism-lecture-source/com/ohgiraffers/section02/abstractclass/SmartPhone.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chap09-polymorphism-lecture-source/com/ohgiraffers/section03/interfaceimplements/Application.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chap09-polymorphism-lecture-source/com/ohgiraffers/section03/interfaceimplements/InterProduct.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chap09-polymorphism-lecture-source/com/ohgiraffers/section03/interfaceimplements/Product.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chap10-api-lecture-source/com/ohgiraffers/section01/object/book/Book.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chap10-api-lecture-source/com/ohgiraffers/section01/object/run/Application1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chap10-api-lecture-source/com/ohgiraffers/section01/object/run/Application2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chap10-api-lecture-source/com/ohgiraffers/section01/object/run/Application3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chap10-api-lecture-source/com/ohgiraffers/section02/string/Application1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chap10-api-lecture-source/com/ohgiraffers/section02/string/Application2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chap10-api-lecture-source/com/ohgiraffers/section02/string/Application3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chap10-api-lecture-source/com/ohgiraffers/section02/string/Application4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chap10-api-lecture-source/com/ohgiraffers/section02/stringbuilder/Application1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chap10-api-lecture-source/com/ohgiraffers/section02/stringbuilder/Application2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chap10-api-lecture-source/com/ohgiraffers/section03/wrapper/Application1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chap10-api-lecture-source/com/ohgiraffers/section03/wrapper/Application2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chap10-api-lecture-source/com/ohgiraffers/section03/wrapper/Application3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chap10-api-lecture-source/com/ohgiraffers/section04/calendar/Application1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chap10-api-lecture-source/com/ohgiraffers/section04/calendar/Application2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chap10-api-lecture-source/com/ohgiraffers/section05/time/Application1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chap10-api-lecture-source/com/ohgiraffers/section05/time/Application2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chap10-api-lecture-source/com/ohgiraffers/section05/time/Application3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chap10-api-lecture-source/com/ohgiraffers/section05/time/Application4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chap10-api-lecture-source/com/ohgiraffers/section05/time/Application5.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chap12-collection-lecture-source/com/ohgiraffers/section01/list/comparator/AscendingPrice.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chap12-collection-lecture-source/com/ohgiraffers/section01/list/dto/BookDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chap12-collection-lecture-source/com/ohgiraffers/section01/list/run/Application1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chap12-collection-lecture-source/com/ohgiraffers/section01/list/run/Application2$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chap12-collection-lecture-source/com/ohgiraffers/section01/list/run/Application2$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chap12-collection-lecture-source/com/ohgiraffers/section01/list/run/Application2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chap12-collection-lecture-source/com/ohgiraffers/section01/list/run/Application3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chap12-collection-lecture-source/com/ohgiraffers/section01/list/run/Application4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chap12-collection-lecture-source/com/ohgiraffers/section01/list/run/Application5.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chap12-collection-lecture-source/com/ohgiraffers/section02/set/run/Application1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chap12-collection-lecture-source/com/ohgiraffers/section02/set/run/Application2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chap12-collection-lecture-source/com/ohgiraffers/section02/set/run/Application3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chap12-collection-lecture-source/com/ohgiraffers/section03/map/run/Application1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chap12-collection-lecture-source/com/ohgiraffers/section03/map/run/Application2.class" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="DEPENDENCY_CHECKER_PROBLEMS_TAB" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
+  <component name="ProjectId" id="2dZJi2j8bbvVoWs0s89U8DEXf8p" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Application.Application.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Application1.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Application2.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Application4.executor&quot;: &quot;Run&quot;,
+    &quot;Application.com.ohgiraffers.section01.object.run.Application1.executor&quot;: &quot;Run&quot;,
+    &quot;Application.com.ohgiraffers.section03.interfaceimplements.Application.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;temurin-17&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/study/intellij_study/lecture-source&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.ide.settings.notifications&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\study\intellij_study\lecture-source\chap08-inheritance-lecture-sourc" />
+      <recent name="D:\study\intellij_study\lecture-source" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Application1">
+    <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.ohgiraffers.section02.abstractclass.Application" />
+      <module name="chap09-polymorphism-lecture-source" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ohgiraffers.section02.abstractclass.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Application1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.ohgiraffers.section01.list.run.Application1" />
+      <module name="chap12-collection-lecture-source" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ohgiraffers.section01.list.run.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Application2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.ohgiraffers.section01.object.run.Application2" />
+      <module name="chap10-api-lecture-source" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ohgiraffers.section01.object.run.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="com.ohgiraffers.section01.object.run.Application1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.ohgiraffers.section01.object.run.Application1" />
+      <module name="chap10-api-lecture-source" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ohgiraffers.section01.object.run.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="com.ohgiraffers.section03.interfaceimplements.Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.ohgiraffers.section03.interfaceimplements.Application" />
+      <module name="chap09-polymorphism-lecture-source" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ohgiraffers.section03.interfaceimplements.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Application1" />
+        <item itemvalue="Application.Application2" />
+        <item itemvalue="Application.com.ohgiraffers.section01.object.run.Application1" />
+        <item itemvalue="Application.com.ohgiraffers.section03.interfaceimplements.Application" />
+        <item itemvalue="Application.Application" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-21.0.1-openjdk-21.0.1-4caba194b151-23eed401" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d0f004af-ea75-4948-9e33-f43775985996" name="Changes" comment="" />
+      <created>1710209791433</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1710209791433</updated>
+      <workItem from="1710209792667" duration="415000" />
+      <workItem from="1710210238034" duration="38000" />
+      <workItem from="1711413136643" duration="277000" />
+      <workItem from="1711413437562" duration="16428000" />
+      <workItem from="1711499459200" duration="2512000" />
+      <workItem from="1711512548137" duration="567000" />
+      <workItem from="1711513133433" duration="26000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>
