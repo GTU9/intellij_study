@@ -1,4 +1,4 @@
-package com.ohgiraffers.setion01.connection;
+package com.ohgiraffers.section01.connection;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -22,7 +22,9 @@ public class Application {
             throw new RuntimeException(e);
         }finally {
             try {
-                con.close();
+                if(con != null &&!con.isClosed()) {
+                    con.close();
+                }
             } catch (SQLException e) {
                 throw new RuntimeException(e);
             }
