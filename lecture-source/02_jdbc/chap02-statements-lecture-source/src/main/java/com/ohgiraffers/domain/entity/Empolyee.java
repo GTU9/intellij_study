@@ -105,7 +105,7 @@ public class Empolyee {
         return manageId;
     }
 
-    public void setManageId(String manageId) {
+    public void setManagerId(String manageId) {
         this.manageId = manageId;
     }
 
