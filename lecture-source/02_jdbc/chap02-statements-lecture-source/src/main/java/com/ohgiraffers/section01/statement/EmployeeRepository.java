@@ -4,7 +4,7 @@ import com.ohgiraffers.domain.entity.Empolyee;
 
 public class EmployeeRepository {
 
-    public Empolyee findEmployee findEmployeeByEmpId(String empId){
+    public Empolyee findEmployeeByEmpId(String empId){
         return null;
     }
 }
