@@ -26,6 +26,12 @@ public class Menu {
         this.orderableStatus = orderableStatus;
     }
 
+    public Menu(int menuCode, String menuName, int menuPrice) {
+        this.menuCode = menuCode;
+        this.menuName = menuName;
+        this.menuPrice = menuPrice;
+    }
+
     public int getMenuCode() {
         return menuCode;
     }
