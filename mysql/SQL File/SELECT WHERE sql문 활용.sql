@@ -207,7 +207,7 @@ select category_code, category_name, ref_category_code
 from tbl_category
 where ref_category_code is null;
 
--- ----------------------------------------------
+-- -----------------------------------------------
 -- NOT (IS NULL)
 select category_code, category_name, ref_category_code
 from tbl_category
