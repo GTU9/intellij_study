@@ -40,15 +40,15 @@ select * from MEMBER_INFO;
 #Q2
 
 select count(*) '팀원 수'
-from (select e.EMP_NAME
+from (select EMP_NAME
 		from employee e, department d, job j
         where e.DEPT_CODE=d.DEPT_ID and e.JOB_CODE=j.JOB_CODE and d.DEPT_TITLE='기술지원부' and j.JOB_NAME='대리'
-        union
-        select e.EMP_NAME
+        union 
+        select EMP_NAME
 		from employee e, department d, job j
         where e.DEPT_CODE=d.DEPT_ID and e.JOB_CODE=j.JOB_CODE and d.DEPT_TITLE='인사관리부' and j.JOB_NAME='사원'
-        union
-		select e.EMP_NAME
+        union 
+		select EMP_NAME
 		from employee e, department d, job j
         where e.DEPT_CODE=d.DEPT_ID and e.JOB_CODE=j.JOB_CODE and d.DEPT_TITLE like'%영업%' and j.JOB_NAME='부장') emp;
         
@@ -58,8 +58,14 @@ from employee e, department d, job j
 where e.DEPT_CODE=d.DEPT_ID 
 	and e.JOB_CODE=j.JOB_CODE 
 	and  d.DEPT_TITLE not like '%영업%' 
-	and j.JOB_NAME in ('대리', '차장') 
-	and e.SALARY between 2000000 and 3000000; 
+	and j.JOB_NAME in ('대리', '차장')
+    union all
+select e.EMP_ID '사원번호', e.EMP_NAME '직원명', e.PHONE'전화번호', d.DEPT_TITLE'부서명', j.JOB_NAME'직급명', e.SALARY'급여'  
+from employee e, department d, job j
+where e.SALARY between 2000000 and 3000000
+	and e.DEPT_CODE=d.DEPT_ID 
+	and e.JOB_CODE=j.JOB_CODE ; 
+    
     
 #Q3-2
 
