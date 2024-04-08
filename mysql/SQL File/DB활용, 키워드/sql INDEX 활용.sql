@@ -33,3 +33,11 @@ on phone (phone_name, phone_price);
 -- INDEX 최적화(재구성)
 alter table phone drop index idx_name;
 alter table phone add index index_name (phone_name);
+
+-- MySQL의  InnoDB 엔진을 사용하는 경우
+-- OPTIMIZE TABLE명령을 사용하여 테이블과 인데스를 최적화할 수도 있다.
+optimize table phone;
+
+-- INDEX 삭제
+drop index idx_name
+on phone;
