@@ -26,12 +26,14 @@ public class Application {
         * ------------------------------------------------------------
         * <ConnectionPool 사용 여부>
         * PooledDataSource : ConnectionPool 사용 (Connection 속도 맟 매모리 효율 증대)
+        * UnPooledDataSource : ConnectionPool 미사용
+        * --------------------------------------------
         * */
 
 
         Environment environment = new Environment("dev"                                         //환경 정보 이름
-                                        , new JdbcTransactionFactory()                          //
-                                        , new PooledDataSource(DRIVER, URL, USER, PASSWORD));   //
+                                        , new JdbcTransactionFactory()                          //트랜젝션 매니저 종류 결정(JDBC or MANAGED)
+                                        , new PooledDataSource(DRIVER, URL, USER, PASSWORD));   //ConnectionPool 사용 유무 (Pooled or Unpooled)
 
         /*생성한 환경 설정 정보를 가지고 MyBatis 설정 객체 생성*/
         Configuration configuration=new Configuration(environment);
@@ -47,15 +49,19 @@ public class Application {
 
         /*openSession() : SqlSession 인터페이스 타입의 객체를 반환하는 메소드, boolean 타입을 인자로 전달
         *        -false : Connection 인텊이스 타입 객체로 DML 수행 후 auoto commit에 대한 옵션을 false로 지정 (권장)
-        *        - true : */
+        *        - true : Connection 인터페이스 타입 객체로 DML 수행 후 auto commit에 대한 옵션을 true로 지정
+         * */
         SqlSession sqlSession= sqlSessionFactory.openSession(false);
 
+        /* getMapper() : Configuration에 등록된 매퍼를 동일 타입에 대해 반환하는 메소드 */
         Mapper mapper= sqlSession.getMapper(Mapper.class);
 
+        /* Mapper 인터페이스에 작성된 메소드를 호출하여 쿼리 실행 */
         java.util.Date date=mapper.selectSysdate();
 
         System.out.println(date);
 
+        /* close() : SqlSession 객체 반납 */
         sqlSession.close();
     }
 }
