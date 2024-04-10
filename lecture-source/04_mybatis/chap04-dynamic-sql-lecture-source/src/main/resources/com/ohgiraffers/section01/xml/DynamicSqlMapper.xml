@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ohgiraffers.section01.xml.DynamicSqlMapper">
+
+    <resultMap id="menuResultMap" type="com.ohgiraffers.common.MenuDTO">
+        <id property="code" column="menu_code"/>
+        <result property="name" column="menu_name"/>
+        <result property="price" column="menu_price"/>
+        <result property="categoryCode" column="category_code"/>
+        <result property="orderableStatus" column="orderable_status"/>
+    </resultMap>
+    <!--<if> 태그-->
+    <!-- test 속성의 조건에 해당할 때만 엘리먼트 내의 구문을 쿼리에 포함한다. -->
+    <select id ="selectMenuByPrice" parameterType="hashmap" resultMap="menuResultMap">
+        select menu_code
+                ,menu_name
+                ,menu_price
+                ,category_code
+                ,orderable_Status
+        from tbl_menu
+        where orderable_status ='Y'
+<!--        <if test="price gte 0 and price lte 10000">-->
+        <if test="price gte 0 and price lte 10000">
+            <![CDATA[
+            and menu_price < #{price}
+            ]]>
+        </if>
+        <if test="price gt 10000 and price lte 20000">
+            and menu_price between 10000 and #{price}
+        </if>
+        <if test="price gt 20000 and price lte 30000">
+            and menu_price between 20000 and #{price}
+        </if>
+        <if test="price gt 30000">
+            and menu_price between 30000 and #{price{
+        </if>
+        order by menu_code
+    </select>
+    <select id="searchMenu" parameterType="SearchCriteria" resultMap="menuResultMap">
+        select m.menu_code
+                ,m.menu_name
+                ,m.menu_price
+                ,m.category_code
+                ,m.orderable_status
+        from tbl_menu m
+        <if test="condition == 'category' ">
+            join tbl_category c on (m.category_code = c.category_code)
+        </if>
+        where m.orderable_status='Y'
+        <if test="condition == 'menu' ">
+            and menu_name like concat('%', #{value}, '%')
+        </if>
+        <if test="condition == 'category' ">
+            and c.category_name= #{value}
+        </if>
+        order by m.menu_code
+    </select>
+
+</mapper>
