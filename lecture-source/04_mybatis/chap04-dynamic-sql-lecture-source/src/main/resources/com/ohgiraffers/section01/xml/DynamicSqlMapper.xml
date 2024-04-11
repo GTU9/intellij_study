@@ -58,4 +58,72 @@
         order by m.menu_code
     </select>
 
+    <!--<choose> (when, otherwise)-->
+    <!--Java의 switch-case 문 처럼 역할을 한다.-->
+    <!--
+        <choose>
+            <when test="(조건)>
+                쿼리문
+            <when/>
+            ...
+            <otherwise>
+                쿼리문
+            <otherwise/>
+    -->
+    <select id = "searchMenuBySupCategory" parameterType="SearchCriteria" resultMap="menuResultMap">
+        select menu_code
+                ,menu_name
+                ,menu_price
+                ,category_code
+                ,orderable_status
+        from tbl_menu
+        where orderable_status ='Y'
+        <choose>
+            <when test="value == '식사'">
+                and category_code in (4,5,6,7)
+            </when>
+            <when test="value=='음료'">
+                and category_code in (8,9,10)
+            </when>
+            <otherwise>
+                and category_code in (11,12)
+            </otherwise>
+        </choose>
+        order by menu_code
+    </select>
+
+    <!--<foreach>-->
+    <!--Java의 for문 처럼 역할을 한다.-->
+    <!--
+        <foreach>태그의 속성
+        1. collection : 반복을 수행할 대상
+        2. item : 반복을 수행할 때마다 꺼내올 값의 이름
+        3. open : <foreach> 엘리멘트 구문의 가장 앞에 올 문자
+        4. separator : 반복을 수행할 때마다 꺼내온 item 사이에 들어갈 문자
+        5. close : <foreach> 엘리멘트 구문의 가장 끝에 올 문자
+    -->
+
+    <select id = "searchMenuByRandomMenuCode" parameterType="SearchCriteria" resultMap="menuResultMap">
+        select menu_code
+                ,menu_name
+                ,menu_price
+                ,category_code
+                ,orderable_status
+        from tbl_menu
+        where orderable_status ='Y'
+        and menu_code in
+        <foreach collection="randomMenuCodeList" item="menuCode" open="(" separator="," close=")">
+            #{menuCode}
+        </foreach>
+        <!--parameter 객체로 받아오지 않고, static 필드 혹은 static 메소드에 직접 접근하여 반환받아 사용 가능
+            - static 필드 접근 시 collection 속성 값 : @풀클래스명@필드명
+            - static 메소드 접근 시 collection 속성 값 : @풀클래스명@메소드명()
+        -->
+        <!--<foreach collection="@com.ohgiraffers.section01.xml.Application@createRandomMenuCodeList()"
+                 item="menuCode" open="(" separator="," close=")">
+            #{menuCode}
+        </foreach>-->
+    </select>
+
+
 </mapper>
