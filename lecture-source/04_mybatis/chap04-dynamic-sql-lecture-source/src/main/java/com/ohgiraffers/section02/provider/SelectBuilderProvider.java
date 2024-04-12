@@ -17,6 +17,6 @@ public class SelectBuilderProvider {
     }
 
     public String searchMenuByCondition(SearchCriteria searchCriteria){
-        return new 
+        return new
     }
 }
