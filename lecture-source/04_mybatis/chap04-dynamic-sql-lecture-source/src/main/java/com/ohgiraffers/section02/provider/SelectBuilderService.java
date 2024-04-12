@@ -7,16 +7,15 @@ import org.apache.ibatis.session.SqlSession;
 import java.util.List;
 
 import static com.ohgiraffers.common.Template.getSqlSession;
-import static java.awt.SystemColor.menu;
 
 public class SelectBuilderService {
 
     private SelectBuilderMapper mapper;
 
-    public void testSimpleStatement(){
+    public void testSimpleStatement() {
 
         SqlSession sqlSession = getSqlSession();
-        mapper=sqlSession.getMapper(SelectBuilderMapper.class);
+        mapper = sqlSession.getMapper(SelectBuilderMapper.class);
 
         List<MenuDTO> menuList = mapper.selectAllMenu();
 
@@ -27,14 +26,14 @@ public class SelectBuilderService {
                 System.out.println(menu);
             }
         } else {
-            System.out.println("검색 결과가 존재하지 않습니다.");
+            System.out.println("조회 결과가 존재하지 않습니다.");
         }
     }
 
     public void testDynamicStatement(SearchCriteria searchCriteria) {
 
         SqlSession sqlSession = getSqlSession();
-        mapper=sqlSession.getMapper(SelectBuilderMapper.class);
+        mapper = sqlSession.getMapper(SelectBuilderMapper.class);
 
         List<MenuDTO> menuList = mapper.searchMenuByCondition(searchCriteria);
 
@@ -44,8 +43,8 @@ public class SelectBuilderService {
             for (MenuDTO menu : menuList) {
                 System.out.println(menu);
             }
-        }else{
-            System.out.printf("검색 결과가 존재하지 않습니다.");
+        } else {
+            System.out.println("검색 결과가 존재하지 않습니다.");
         }
     }
 }
