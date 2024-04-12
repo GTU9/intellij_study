@@ -45,4 +45,11 @@ public class SqlBuilderProvider {
 
         return sql.toString();
     }
+
+    public String removeMenu() {
+        return new SQL()
+                .DELETE_FROM("tbl_menu")
+                .WHERE("menu_code = #{code}")
+                .toString();
+    }
 }
