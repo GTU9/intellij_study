@@ -73,7 +73,7 @@ public class Application {
             switch (no){
                 case 1:sqlBuilderService.registMenu(inputNameMenu()); break;
                 case 2:sqlBuilderService.modifyMenu(inputModifyMenu()); break;
-                case 3: break;
+                case 3:sqlBuilderService.removeMenu(inputMenuCode()); break;
                 case 9: return;
             }
         }while (true);
@@ -124,7 +124,7 @@ public class Application {
     private static int inputMenuCode(){
         Scanner sc=new Scanner(System.in);
 
-        System.out.println("삭제할 메뉴 코드를 입력하세요 : ");
+        System.out.print("삭제할 메뉴 코드를 입력하세요 : ");
         int code = sc.nextInt();
 
         return code;
