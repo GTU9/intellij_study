@@ -1,5 +1,6 @@
 package com.ohgiraffers.section02.provider;
 
+import com.ohgiraffers.common.MenuDTO;
 import com.ohgiraffers.common.SearchCriteria;
 
 import java.util.Scanner;
@@ -14,12 +15,12 @@ public class Application {
             System.out.println("1. SelectBuilder test");
             System.out.println("2. SqlBuilder test");
             System.out.println("9. 프로그램 종료");
-            System.out.println("실행할 메뉴 번호를 입력해주세요 : ");
+            System.out.print("실행할 메뉴 번호를 입력해주세요 : ");
             int no = sc.nextInt();
 
             switch (no) {
                 case 1: selectBuilderSubMenu(); break;
-//                case 2: sqlBuilderSubMenu(); break;
+                case 2: sqlBuilderSubMenu(); break;
                 case 9: System.out.println("프로그램을 종료합니다."); return;
             }
         } while (true);
@@ -34,7 +35,7 @@ public class Application {
             System.out.println("1. SelectBuilder 기본 구문 사용");
             System.out.println("2. SelectBuilder를 이용한 동적 쿼리 사용");
             System.out.println("9. 이전 메뉴로 이동");
-            System.out.println("실행할 메뉴 번호를 입력해주세요 : ");
+            System.out.print("실행할 메뉴 번호를 입력해주세요 : ");
             int no = sc.nextInt();
 
             switch (no) {
@@ -54,5 +55,78 @@ public class Application {
         String value = sc.nextLine();
 
         return new SearchCriteria(condition, value);
+    }
+
+    private static void sqlBuilderSubMenu(){
+        Scanner sc=new Scanner(System.in);
+        SqlBuilderService sqlBuilderService= new SqlBuilderService();
+
+        do{
+            System.out.println("=========== SqlBuilder Sub Menu ===========");
+            System.out.println("1. 새로운 메뉴 추가");
+            System.out.println("2. 기존 메뉴 수정");
+            System.out.println("3. 기존 메뉴 삭제");
+            System.out.println("9. 이전 메뉴로 이동");
+            System.out.print("실행할 메뉴번호를 입력하세요 : ");
+            int no = sc.nextInt();
+
+            switch (no){
+                case 1:sqlBuilderService.registMenu(inputNameMenu()); break;
+                case 2:sqlBuilderService.modifyMenu(inputModifyMenu()); break;
+                case 3: break;
+                case 9: return;
+            }
+        }while (true);
+    }
+
+    private static MenuDTO inputNameMenu(){
+        Scanner sc=new Scanner(System.in);
+
+        System.out.print("신메뉴의 이름을 입력하세요 : ");
+        String name=sc.nextLine();
+        System.out.print("신메뉴의 가격을 입력하세요 : ");
+        int price=sc.nextInt();
+        System.out.print("신메뉴의 등록 카테고리를 입력하세요 : ");
+        int categoryCode=sc.nextInt();
+        System.out.print("판매 등록 여부를 입력하세요 (Y ot N) : ");
+        sc.nextLine();
+        String orderableStatus=sc.nextLine();
+
+        MenuDTO newMenu=new MenuDTO();
+        newMenu.setName(name);
+        newMenu.setPrice(price);
+        newMenu.setCategoryCode(categoryCode);
+        newMenu.setOrderableStatus(orderableStatus);
+
+        return  newMenu;
+
+    }
+
+    private static MenuDTO inputModifyMenu(){
+        Scanner sc=new Scanner(System.in);
+
+        System.out.print("수정 대상 메뉴 코드를 입력하세요 : ");
+        int code=sc.nextInt();
+        System.out.print("수정할 메뉴명을 입력하세요 : ");
+        sc.nextLine();
+        String name=sc.nextLine();
+        System.out.print("수정할 메뉴 가격을 입력하세요 : ");
+        int price = sc.nextInt();
+        System.out.print("수정할 메뉴 카테고리를 입력하세요");
+        int categoryCode=sc.nextInt();
+        System.out.print("수정할 만패 등록 여부를 입력하세요 (Y or N) : ");
+        sc.nextLine();
+        String orderableStaus=sc.nextLine();
+
+        return new MenuDTO(code, name, price, categoryCode, orderableStaus);
+    }
+
+    private static int inputMenuCode(){
+        Scanner sc=new Scanner(System.in);
+
+        System.out.println("삭제할 메뉴 코드를 입력하세요 : ");
+        int code = sc.nextInt();
+
+        return code;
     }
 }
