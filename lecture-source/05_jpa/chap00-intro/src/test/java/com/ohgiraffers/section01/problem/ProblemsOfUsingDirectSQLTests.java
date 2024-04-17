@@ -148,4 +148,54 @@ public class ProblemsOfUsingDirectSQLTests {
 
         //then
     }
+
+    /*3-1. 상속문제*/
+    /*
+     * 객체 지향 언어의 상속 개념과 유사한 것이 데이터베이스의 서브타입엔티티 이다.
+     * 유사한 것 같지만 다른 부분은 데이터베이스의 상속은 상속 개념을 데이터로 추상화해서 슈퍼타입과 서브타입으로 구분하고,
+     * 슈퍼타입의 모든 속성을 서브타입이 공유하지 못하여 물리적으로 다른 테이블로 분리가 된 형태이다.
+     * (설계에 따라서는 속성으로 추가되기도 한다.)
+     * 하지만 객체지향의 상속은 슈퍼타입의 속성을 공유해서 사용하므로 여기서 패러다임 불일치 현상이 발생한다.
+     */
+
+    /*4. 동일성 보장 문제*/
+    @Test
+    @DisplayName("죄회한 두개의 행을 담은 객체의 동일성 비교")
+    void testEqulas() throws SQLException {
+
+        //given
+        String query="select menu_code, menu_nam from tbl_menu where menu_code=1";
+
+        //when
+        Statement stmt1= con.createStatement();
+        ResultSet rset1=stmt1.executeQuery(query);
+
+        Menu menu1=null;
+        while(rset1.next()){
+            menu1=new Menu();
+            menu1.setMenuCode(rset1.getInt("menu_code"));
+            menu1.setMenuName(rset1.getString("menu_name"));
+        }
+
+        Statement stmt2= con.createStatement();
+        ResultSet rset2=stmt1.executeQuery(query);
+
+        Menu menu2=null;
+        while(rset1.next()){
+            menu2=new Menu();
+            menu2.setMenuCode(rset1.getInt("menu_code"));
+            menu2.setMenuName(rset1.getString("menu_name"));
+        }
+
+        //then
+        Assertions.assertFalse(menu1==menu2);
+        Assertions.assertEquals(menu1.getMenuCode(),menu2.getMenuCode());
+
+        rset1.close();
+        stmt1.close();
+        rset2.close();
+        stmt2.close();
+
+    }
+
 }
