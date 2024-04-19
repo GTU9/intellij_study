@@ -3,6 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .test1{
+            background: yellow;
+            color: red;
+        }
+
+        div{
+            width: 300px;
+            height: 300px;
+            background: blue;
+        }
+
+        #test2{
+            background:green;
+            color: red;
+        }
+
+        .test2{
+            background:plum !important;
+            color:purple !important;
+        }
+
+    </style>
     <title>Document</title>
 </head>
 <body>
@@ -15,6 +38,6 @@
     <hr>
     <h2>선택자 우선순위 테스트</h2>
     <div id="test1" class="test1">우선순위 테스트1</div>
-    <p id="test2" class="test2">우선순위 테스트 2</p>
+    <p id="test2" class="test2" style="background: black; color: white;">우선순위 테스트 2</p>
 </body>
 </html>
