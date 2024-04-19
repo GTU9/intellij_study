@@ -3,6 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* 형제 탐색 선택지들 (traversing sibling) */
+
+        /* 형제 관계 태그 중 첫 번째 태그 선택 */
+        #test1 :first-child{
+            background:red;
+            color:white;
+        }
+
+        /* 형제 관계 태그 중 마지막 태그 선택 */
+        #test1 :last-child{
+            background: blue;
+            color: white;
+        }
+
+        #test1 :nth-child(3n){
+            background: pink;
+        }
+
+        /* 형제 관계 태그 중 뒤에서 수열번 째 태그 선택 */
+        #test1 :nth-last-child(4){
+            background: skyblue
+        }
+
+        #test2 :first-of-type{
+            background: peru;
+        }
+
+        #test2 :last-of-type{
+            background: red;
+        }
+
+        #test2 p:nth-of-type(2n){
+            background: yellow;
+        }
+
+        #test2 p:nth-last-of-type(3){
+            background: blue;
+        }
+
+        /* 부정 선택자 */
+        #test3 p:not(:nth-child(2n-1)){
+            background: orange;
+        }
+
+        /* 첫 번째 글자 선택 */
+        #test4 p::first-letter{
+            font-size: 2em;
+        }
+
+        /* 첫 번째 라인(줄) 선택 */
+        #test4 p::first-line{
+            background: coral;
+        }
+
+        /* 태그 뒤에 위치하는 공간 선택 */
+        #test4 p:after{
+            content: "@@ after tag 추가~~! @@"
+        }
+        
+        /* 사용자가 드래그한 글자 선택 */
+        #test4 p::selection{
+            background: purple;
+            color: white;
+        }
+
+        /* 태그별로 자동 번호를 매겨주는 속성 추가 */
+        #test4 p:before{
+            content: counter(rint) ". ";
+        }
+    </style>
     <title>CSS3 선택자3</title>
 </head>
 <body>
