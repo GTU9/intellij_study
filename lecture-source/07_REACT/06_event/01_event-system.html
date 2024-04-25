@@ -31,9 +31,43 @@
      -->
 
     <script type="text/babel">
+        class EventButton extends React.Component{
 
+            constructor(props){
+                super(props);
+            }
+
+            /* 1. 직접 이벤트 속성에 이벤트 핸들러 함수 정의하며 이벤트 연결 */
+            // render(){
+            //     return(
+            //         <button onClick={()=>alert('인라인 함수 이벤트 동작 확인')}>{this.props.children}</button>
+            //     );
+            // }
+
+            /* 2. render 함수 외부에 이벤트 핸들러 함수 정의 후 함수 전달하여 이벤트 연결 */
+            // onClickHandler=()=>alert('외부 함수 이벤트 동작 확인!');
+
+            // render(){
+            //     return(
+            //         <button onClick={this.onClickHandler}>{this.props.children}</button>
+            //     );
+            // }
+
+            /* 3. 컴포넌트에 이벤트를 props로 전달하여 이벤트 연결 */
+             render(){
+                console.log(this.props);
+                
+                const {onClick, children}=this.props;
+                return(
+                    <button onClick={onClick}>{children}</button>
+                );
+            }
+
+            
+        }
         ReactDOM.createRoot(document.querySelector('#root')).render(
-
+            // <EventButton>Event Button</EventButton>
+            <EventButton onClick ={()=>alert('props로 전달한 이벤트 동작 확인!')}>EVNET BUTTON</EventButton>
         );
     </script>
     
