@@ -1,9 +1,8 @@
-function Header(){
-    return(
-        <div>
-            <h1>Welcome To Veagan Party</h1>
-        </div>
+function Header() {
 
+    return (
+        <h1>Welcome to Vegan Restaurant</h1>
     );
 }
+
 export default Header;
