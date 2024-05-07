@@ -40,7 +40,7 @@ public class RequestHeaderPrintServlet extends HttpServlet {
         * sec-fetch-dest : 요청 대상
         * referer : 이 페이지 이전에 대한 주소
         * accept-encoding : 응답 시 원하는 인코딩 방식
-        * accept-language : 응담 시 원한는 언어
+        * accept-language : 응답 시 원한는 언어
         * cookie
         * */
 
