@@ -10,5 +10,5 @@
     <servlet-mapping>
         <servlet-name>xmlmapping</servlet-name>
         <url-pattern>/xml-lifecycle</url-pattern>
-    </servlet-mapping>v
+    </servlet-mapping>
 </web-app>
