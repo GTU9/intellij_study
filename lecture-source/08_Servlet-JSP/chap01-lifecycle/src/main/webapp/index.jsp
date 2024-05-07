@@ -2,11 +2,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>JSP - Hello World</title>
+  <title>Lifecycle</title>
 </head>
 <body>
-<h1><%= "Hello World!" %></h1>
-<br/>
-<a href="hello-servlet">Hello Servlet</a>
+  <h1>라이프사이클 확인하기</h1>
+  <a href="annotation-lifecycle">with Annotation</a>
 </body>
 </html>
