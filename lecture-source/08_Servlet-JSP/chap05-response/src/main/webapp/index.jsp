@@ -2,12 +2,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>JSP - Hello World</title>
+    <title>Response</title>
 </head>
 <body>
-<h1><%= "Hello World!" %>
-</h1>
-<br/>
-<a href="hello-servlet">Hello Servlet</a>
+    <h1>Response</h1>
+    <ul>
+        <li><a href="response">Response 확인</a></li>
+        <li><a href="headers">Response Header 확인</a></li>
+        <li><a href="status">Response StructsCode 확인</a></li>
+    </ul>
 </body>
 </html>
