@@ -16,6 +16,20 @@ public class ContextConfiguration {
 
     @Bean
     public MemberDTO memberGenerator(){
-        return new MemberDTO(1, "토끼", "010-1234-5678", "rabbit@gmail.com", accountGenerator());
+
+        /*1. 생성자 주입*/
+        /*MemberDTO 생성자를 통해 Account를 생성하는 메소드를 호출한 리턴 값을 전달하여 bean 조립*/
+//        return new MemberDTO(1, "토끼", "010-1234-5678", "rabbit@gmail.com", accountGenerator());
+
+        /*2. setter 주입*/
+        /*setter를 통해 Account를 생성하는 메소드를 호출한 리턴 값을 전달하여 bean 조립*/
+        MemberDTO member = new MemberDTO();
+        member.setSequence(1);
+        member.setName("끼리코");
+        member.setPhone("010-1234-567890");
+        member.setEmail("GGiriCo@gmail.com");
+        member.setPersonalAccount(accountGenerator());
+
+        return member;
     }
 }
