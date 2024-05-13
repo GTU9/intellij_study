@@ -1,4 +1,4 @@
-package com.ohgiraffers.section01.autowired.sub1.field;
+package com.ohgiraffers.section01.autowired.sub02.constructor;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
@@ -8,7 +8,7 @@ public class Application {
 
         ApplicationContext context= new AnnotationConfigApplicationContext("com.ohgiraffers.section01");
 
-        BookService bookService =context.getBean("bookServiceField",BookService.class);
+      BookService bookService =context.getBean("bookServiceConstructor", BookService.class);
 
         bookService.selectAllBooks().forEach(System.out::println);
 

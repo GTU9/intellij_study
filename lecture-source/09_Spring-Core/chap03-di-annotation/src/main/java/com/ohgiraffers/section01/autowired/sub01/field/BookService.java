@@ -1,4 +1,4 @@
-package com.ohgiraffers.section01.autowired.sub1.field;
+package com.ohgiraffers.section01.autowired.sub01.field;
 
 import com.ohgiraffers.section01.common.BookDAO;
 import com.ohgiraffers.section01.common.BookDTO;

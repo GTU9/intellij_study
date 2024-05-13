@@ -1,4 +1,4 @@
-package com.ohgiraffers.section01.autowired.sub2.constructor;
+package com.ohgiraffers.section01.autowired.sub02.constructor;
 
 import com.ohgiraffers.section01.common.BookDAO;
 import com.ohgiraffers.section01.common.BookDTO;
@@ -11,6 +11,14 @@ import java.util.List;
 public class BookService {
 
     private BookDAO bookDAO;
+
+    public BookService() {}
+
+    /*
+    * 생성자가 1개인 경우에는 @Autowired 어노테이션을 생략해도 자동으로 생성자 주입이 동작한다.
+    * 단, 생성자가 2개 이상일 경우에는 명시적으로 @Autowired 어노테이션을 작성해 주어야 한다.
+    * */
+
 
     @Autowired
     public BookService(BookDAO bookDAO){
