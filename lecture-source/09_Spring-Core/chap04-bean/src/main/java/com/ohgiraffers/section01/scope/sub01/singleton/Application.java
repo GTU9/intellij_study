@@ -1,9 +1,9 @@
-package com.ohgiraffer.section01.scope.sub01.singleton;
+package com.ohgiraffers.section01.scope.sub01.singleton;
 
-import com.ohgiraffer.common.Beverage;
-import com.ohgiraffer.common.Bread;
-import com.ohgiraffer.common.Product;
-import com.ohgiraffer.common.ShoppingCart;
+import com.ohgiraffers.common.Beverage;
+import com.ohgiraffers.common.Bread;
+import com.ohgiraffers.common.Product;
+import com.ohgiraffers.common.ShoppingCart;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 

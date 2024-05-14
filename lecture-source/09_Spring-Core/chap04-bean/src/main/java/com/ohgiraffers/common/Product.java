@@ -1,4 +1,4 @@
-package com.ohgiraffer.common;
+package com.ohgiraffers.common;
 
 public abstract class Product  {
 

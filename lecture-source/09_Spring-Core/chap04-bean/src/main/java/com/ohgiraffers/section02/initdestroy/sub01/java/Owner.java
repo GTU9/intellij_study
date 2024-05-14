@@ -1,4 +1,4 @@
-package com.ohgiraffer.section02.initdestroy.sub01.java;
+package com.ohgiraffers.section02.initdestroy.sub01.java;
 
 public class Owner {
 

@@ -1,4 +1,4 @@
-package com.ohgiraffer.common;
+package com.ohgiraffers.common;
 
 import java.util.ArrayList;
 import java.util.List;

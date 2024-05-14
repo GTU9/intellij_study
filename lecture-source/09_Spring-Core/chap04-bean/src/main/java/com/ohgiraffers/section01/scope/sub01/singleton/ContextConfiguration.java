@@ -1,9 +1,9 @@
-package com.ohgiraffer.section01.scope.sub02.prototype;
+package com.ohgiraffers.section01.scope.sub01.singleton;
 
-import com.ohgiraffer.common.Beverage;
-import com.ohgiraffer.common.Bread;
-import com.ohgiraffer.common.Product;
-import com.ohgiraffer.common.ShoppingCart;
+import com.ohgiraffers.common.Beverage;
+import com.ohgiraffers.common.Bread;
+import com.ohgiraffers.common.Product;
+import com.ohgiraffers.common.ShoppingCart;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Scope;
@@ -27,7 +27,7 @@ public class ContextConfiguration {
     }
 
     @Bean
-    @Scope("prototype")
+    @Scope("singleton")
     public ShoppingCart cart(){
         return new ShoppingCart();
     }
