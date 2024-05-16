@@ -15,6 +15,11 @@ dependencies {
 
     implementation 'org.springframework:spring-core:5.3.27'
     implementation 'org.springframework:spring-context:5.3.27'
+
+    implementation 'org.aspectj:aspectjrt:1.9.19'
+    /*https://mvnrepository.com/artifact/org.aspectj/aspectjrt/1.9.19*/
+    implementation 'org.aspectj:aspectjweaver:1.9.19'
+    /*https://mvnrepository.com/artifact/org.aspectj/aspectjweaver/1.9.19*/
 }
 
 test {
