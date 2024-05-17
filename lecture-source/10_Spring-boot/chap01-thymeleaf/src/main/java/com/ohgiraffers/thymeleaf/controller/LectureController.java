@@ -6,6 +6,9 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
+import java.util.ArrayList;
+import java.util.List;
+
 @Controller
 @RequestMapping("lecture")
 public class LectureController  {
@@ -26,8 +29,9 @@ public class LectureController  {
     public ModelAndView conditional(ModelAndView mv){
 
         mv.addObject("num", 216);
-
         mv.addObject("str", "바나나");
+
+        List<MemberDTO> memberList=new ArrayList<>();
 
         mv.setViewName("/lecture/conditional");
 
