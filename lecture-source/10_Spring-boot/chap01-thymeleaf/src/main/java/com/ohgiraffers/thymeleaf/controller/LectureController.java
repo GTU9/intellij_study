@@ -25,6 +25,10 @@ public class LectureController  {
     @GetMapping("conditional")
     public ModelAndView conditional(ModelAndView mv){
 
+        mv.addObject("num", 216);
+
+        mv.addObject("str", "바나나");
+
         mv.setViewName("/lecture/conditional");
 
         return mv;
