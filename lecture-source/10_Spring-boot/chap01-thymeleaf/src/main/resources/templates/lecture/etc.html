@@ -22,5 +22,36 @@
         </th:block>
     </th:block>
 
+    <h2>SpringEL</h2>
+    <h3>
+        변수 표현식 ${...}은 SpringEL 이라는 Spring에서 제공하는 표현식을 사용할 수 있다.
+        (SpringEL은 런타임 시 메소드 호출 및 기본 문자열 템플릿 등의 기능을 제공한다.)
+        단순한 변수가 아닌 Object, List, Map 같은 객체를 사용하기 위해 활용할 수 있다.
+    </h3>
+
+    <p>Object</p>
+    <ul>
+        <li th:text="${member.name}"></li>
+        <li th:text="${member['age']}"></li>
+        <li th:text="${member.getAddress()}"></li>
+    </ul>
+
+    <p>List</p>
+    <ul>
+        <li th:text="${memberList[1].name}"></li>
+        <li th:text="${memberList[1]['age']}"></li>
+        <li th:text="${memberList[1].getGender()}"></li>
+        <li th:text="${memberList.get(1).getGender()}"></li>
+        <li th:text="${memberList.get(1).address}"></li>
+    </ul>
+
+    <p>Map</p>
+        <ul>
+            <li th:text="${memberMap['m03'].name}"></li>
+            <li th:text="${memberMap['m04']['age']}"></li>
+            <li th:text="${memberMap['m05'].getAddress()}"></li>
+        </ul>
+
+
 </body>
 </html>
