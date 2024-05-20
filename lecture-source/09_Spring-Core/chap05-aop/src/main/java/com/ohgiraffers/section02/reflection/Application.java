@@ -102,10 +102,30 @@ public class Application {
             e.printStackTrace();
         }
 
-        /*메소드 정보*/
-        Method[] methods=Account.class.getMethods();
-        for(Method method:methods){
-            System.out.println();
+        System.out.println("============== Method ==============");
+        Method[]  methods = Account.class.getMethods();
+        Method toStringMethod = null;
+
+        for (Method method : methods) {
+            System.out.println(Modifier.toString(method.getModifiers())
+                    + " " + method.getReturnType().getSimpleName()
+                    + " " + method.getName());
+
+            Class[] params = method.getParameterTypes();
+            for (Class param : params) {
+                System.out.println("paramType : " + param.getTypeName());
+            }
+
+            if ("toString".equals(method.getName())) {
+                toStringMethod = method;
+            }
+        }
+
+        try {
+            System.out.println(toStringMethod.invoke((Account) constructors[1].newInstance("20", "110-234-567890", "0000", 10000)));
+
+        } catch (InstantiationException | IllegalAccessException | InvocationTargetException e) {
+            e.printStackTrace();
         }
     }
 }
