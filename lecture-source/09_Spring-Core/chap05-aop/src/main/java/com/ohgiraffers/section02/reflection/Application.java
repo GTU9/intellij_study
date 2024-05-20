@@ -1,5 +1,7 @@
 package com.ohgiraffers.section02.reflection;
 
+import java.lang.reflect.*;
+
 public class Application {
 
     /*
@@ -23,4 +25,87 @@ public class Application {
     * 3. Mybatis Mapper
     * 4. log4jdbc
     * */
+
+    public static void main(String[] args){
+
+        /*Class : 해당 클래스의 메타 정보를 가지고 있는 클래스*/
+        /*1) .class 문법을 이용하여 Class 타입의 인스턴스를 생성할 수 있다.*/
+        Class class1=Account.class;
+        System.out.println("[class1] "+class1);
+
+        /*2) Object 클래스의 getClass() 메소드를 이용하면 Class 타입으로 리턴받아 이용할 수 있다.*/
+        Class class2= new Account().getClass();
+        System.out.println("[class2] "+class2);
+
+        try{
+            /*3) Class.forName() 메소드를 이용하여 런타임 시 로딩하고 해당 클래스 메타 정보를 Class 타입으로 반환받을 수 있다.*/
+            Class class3=Class.forName("com.ohgiraffers.section02.reflection.Account");
+            System.out.println("[class3] "+class3);
+
+            /*Double 자료형 배열을 로드할 수 있다.*/
+            Class class4=Class.forName("[D");
+            Class class5=double[].class;
+            System.out.println("[class4] "+class4);
+            System.out.println("[class5] "+class5);
+
+            /*String 자료형 배열을 로드할 수 있다.*/
+            Class class6=Class.forName("[Ljava.lang.String;");
+            Class class7=String[].class;
+            System.out.println("[class6] "+class6);
+            System.out.println("[class7] "+class7);
+
+        }catch(ClassNotFoundException e){
+            e.printStackTrace();
+        }
+
+        /*원시 자료형의 Class 타입은 얻을 수 없다. (컴파일 에러 발생)*/
+
+//        double d=1.0;
+//        Class class8=d.getClass();
+
+        /*TYPE 핃드를 이용하여 원시형 클래스를 반환받을 수 있다.*/
+        Class class8=Double.TYPE;
+        System.out.println("[class8] "+class8);
+
+        Class class9=Void.TYPE;
+        System.out.println("[class9] " + class9);
+
+        /*클래스의 메타정보를 이용하여 여러 정보를 반환받는 베소드를 제공한다.*/
+        /*getSuperClass() 메소드는 상속된 부모 클래스를 반환한다.*/
+        Class superClass=class1.getSuperclass();
+        System.out.println("[superClass] "+superClass);
+
+        /*필드 정보*/
+        Field[] fields=Account.class.getDeclaredFields();
+        for(Field field:fields){
+            System.out.println("modifiers : "+ Modifier.toString(field.getModifiers())
+                                +", type : "+field.getType()
+                                +", name : "+field.getName());
+        }
+
+        /*생성자 정보*/
+        System.out.println("===================Constructor====================");
+        Constructor[] constructors=Account.class.getConstructors();
+        for(Constructor constructor:constructors){
+            System.out.println("name : "+constructor.getName());
+
+            Class[] params=constructor.getParameterTypes();
+            for(Class param:params){
+                System.out.println("paramType : "+param.getTypeName());
+            }
+        }
+        try {
+            Account acc=(Account)constructors[1].newInstance("20","110-234-567890","0000",10000);
+            System.out.println(acc);
+
+        } catch (InstantiationException | IllegalAccessException | IllegalArgumentException | InvocationTargetException e) {
+            e.printStackTrace();
+        }
+
+        /*메소드 정보*/
+        Method[] methods=Account.class.getMethods();
+        for(Method method:methods){
+            System.out.println();
+        }
+    }
 }
