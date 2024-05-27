@@ -1,13 +1,13 @@
-package com.ohgiraffers.crud;
+package com.ohgiraffers.crud.config;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class Chap03CrudApplication {
+public class Application {
 
     public static void main(String[] args) {
-        SpringApplication.run(Chap03CrudApplication.class, args);
+        SpringApplication.run(Application.class, args);
     }
 
 }
