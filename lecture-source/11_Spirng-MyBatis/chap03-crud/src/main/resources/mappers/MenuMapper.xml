@@ -12,6 +12,12 @@
         <result property="orderableStatus" column="orderable_status"/>
     </resultMap>
 
+    <resultMap id="categoryResultMap" type="com.ohgiraffers.crud.menu.model.dto.CategoryDTO">
+        <id property="code" column="category_code"/>
+        <result property="name" column="category_name"/>
+        <result property="refCategoryCode" column="ref_category_code0"/>
+    </resultMap>
+
     <select id="findAllMenu" resultMap="menuResultMap">
         SELECT  menu_code
                 ,menu_name
@@ -22,5 +28,28 @@
          WHERE  orderable_status = 'Y'
         ORDER BY menu_code
     </select>
+
+    <select id="findAllCategory" resultMap="categoryResultMap">
+        SELECT category_code
+                ,category_name
+                ,ref_category_code
+            FROM tbl_category
+    </select>
+
+    <insert id="registMenu" parameterType="com.ohgiraffers.crud.menu.model.dto.MenuDTO"
+            useGeneratedKeys="true" keyProperty="code">
+        INSERT INTO tbl_menu(
+                            menu_name
+                            ,menu_price
+                            ,category_code
+                            ,orderable_status
+                            )
+        VALUES(
+                #{name}
+                ,#{price}
+                ,#{categoryCode}
+                ,#{orderableStatus}
+        )
+    </insert>
 
 </mapper>
