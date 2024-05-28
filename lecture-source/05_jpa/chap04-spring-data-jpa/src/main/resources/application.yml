@@ -4,7 +4,6 @@ spring:
     url: jdbc:mysql://localhost:3306/menu
     username: root
     password: root
-
   jpa:
     show-sql: true
     database: mysql
