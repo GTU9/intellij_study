@@ -1,7 +1,10 @@
 package com.ohgiraffers.springdatajpa.repository;
 
+import com.ohgiraffers.springdatajpa.menu.entity.Menu;
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
 
-public interface MenuRepository extends JpaRepository {
+@Repository
+public interface MenuRepository extends JpaRepository<Menu,Integer> {
 
 }
