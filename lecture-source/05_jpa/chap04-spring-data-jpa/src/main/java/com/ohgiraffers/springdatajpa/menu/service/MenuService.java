@@ -1,7 +1,10 @@
 package com.ohgiraffers.springdatajpa.menu.service;
 
+import com.ohgiraffers.springdatajpa.menu.dto.CategoryDTO;
 import com.ohgiraffers.springdatajpa.menu.dto.MenuDTO;
+import com.ohgiraffers.springdatajpa.menu.entity.Category;
 import com.ohgiraffers.springdatajpa.menu.entity.Menu;
+import com.ohgiraffers.springdatajpa.menu.repository.CategoryRepository;
 import com.ohgiraffers.springdatajpa.menu.repository.MenuRepository;
 import org.modelmapper.ModelMapper;
 import org.springframework.data.domain.Page;
@@ -9,6 +12,7 @@ import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 import java.util.stream.Collectors;
@@ -20,9 +24,12 @@ public class MenuService {
 
     private final ModelMapper modelMapper;
 
-    public MenuService(MenuRepository menuRepository, ModelMapper modelMapper) {
+    private final CategoryRepository categoryRepository;
+
+    public MenuService(MenuRepository menuRepository, ModelMapper modelMapper, CategoryRepository categoryRepository) {
         this.menuRepository = menuRepository;
         this.modelMapper = modelMapper;
+        this.categoryRepository = categoryRepository;
     }
 
     /* 1. findById() */
@@ -63,5 +70,35 @@ public class MenuService {
                         .collect(Collectors.toList());
     }
 
+    /*5. @Query : JPQL or native query*/
+    public List<CategoryDTO> findAllCategory() {
+        List<Category> categoryList = categoryRepository.findAllCategory();
+
+        return categoryList.stream()
+                .map(category -> modelMapper.map(category, CategoryDTO.class))
+                .collect(Collectors.toList());
+    }
+
+    /* 6. save()*/
+    @Transactional
+    public void registNewMenu(MenuDTO newMenu) {
+        System.out.println(modelMapper.map(newMenu, Menu.class));
+        menuRepository.save(modelMapper.map(newMenu, Menu.class));
+    }
+
+    /*7. modify*/
+    @Transactional
+    public void modifyMenu(MenuDTO modifyMenu) {
+        Menu foundMenu=menuRepository.findById(modifyMenu.getMenuCode()).orElseThrow(IllegalArgumentException::new);
+
+        foundMenu.setMenuName(modifyMenu.getMenuName());
+    }
+
+    /*8. deleteById()*/
+    @Transactional
+    public void deleteMenu(Integer menuCode) {
+        menuRepository.deleteById(menuCode);
+
+    }
 
 }
