@@ -1,8 +1,12 @@
 package com.ohgiraffers.jpql.section01.simple;
 
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+
+import java.util.List;
 
 @SpringBootTest
 public class SimpleJPQLTests {
@@ -70,7 +74,7 @@ public class SimpleJPQLTests {
      *       - 조회 결과가 다중(여러) 컬럼인 경우 Object[]로 다운캐스팅 해서 사용해야 한다.
      * */
 
-
+    @Autowired
     private SimpleJPQLRepository repository;
 
     @DisplayName("TypedQuery를 이용한 단일메뉴(단일행,단일컬럼) 조회 테스트")
@@ -78,8 +82,11 @@ public class SimpleJPQLTests {
     public void testSelectSingleMenuByTypedQuery() {
         //given
         //when
-        //then
+        String menuName=repository.selectSingleMenuByTypedQuery();
 
+        //then
+        Assertions.assertEquals("한우딸기국밥",menuName);
+        Assertions.assertEquals(repository.findMenu(8).getMenuName(),menuName);
     }
 
     @DisplayName("Query를 이용한 단일메뉴(단일행,단일컬럼) 조회 테스트")
@@ -87,7 +94,11 @@ public class SimpleJPQLTests {
     public void testSelectSingleMenuByQuery() {
         //given
         //when
+        Object menuName=repository.selectSingleMenuByQuery();
+
         //then
+        Assertions.assertEquals("한우딸기국밥",menuName);
+        Assertions.assertTrue(menuName instanceof String);
 
     }
 
@@ -96,7 +107,11 @@ public class SimpleJPQLTests {
     public void testSelectSingleRowByTypedQuery() {
         //given
         //when
+        Menu menu = repository.selectSingleRowByTypedQuery();
+
         //then
+        Assertions.assertEquals(8,menu.getMenuCode());
+
 
     }
 
@@ -105,7 +120,13 @@ public class SimpleJPQLTests {
     public void testSelectMultipleRowByTypedQuery() {
         //given
         //when
+        List<Menu> menuList =repository.selectMultipleRowByTypedQuery();
+
         //then
+        Assertions.assertNotNull(menuList);
+        menuList.forEach(System.out::println);
+
+
 
     }
 
@@ -114,7 +135,12 @@ public class SimpleJPQLTests {
     public void testSelectMultipleRowByQuery() {
         //given
         //when
+        List<Menu>menuList=repository.selectMultipleRowByQuery();
+
         //then
+        Assertions.assertNotNull(menuList);
+        menuList.forEach(System.out::println);
+
 
     }
 
@@ -124,7 +150,11 @@ public class SimpleJPQLTests {
     public void testSelectUsingDistinct() {
         //given
         //when
+        List<Integer> categoryCodeList=repository.selectUsingDistinct();
+
         //then
+        Assertions.assertNotNull(categoryCodeList);
+
 
     }
 
@@ -133,7 +163,12 @@ public class SimpleJPQLTests {
     public void testSelectUsingIn() {
         //given
         //when
+        List<Menu> menuList=repository.selectUsingIn();
         //then
+
+        Assertions.assertNotNull(menuList);
+        menuList.forEach(System.out::println);
+
 
     }
 
@@ -142,8 +177,11 @@ public class SimpleJPQLTests {
     public void testSelectUsingLike() {
         //given
         //when
+        List<Menu> menuList=repository.selectUsingLike();
         //then
 
+        Assertions.assertNotNull(menuList);
+        menuList.forEach(System.out::println);
     }
 
 
