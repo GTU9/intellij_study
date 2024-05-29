@@ -7,6 +7,7 @@ import jakarta.persistence.Query;
 import org.junit.jupiter.api.*;
 
 import java.util.List;
+import java.util.Objects;
 import java.util.stream.Stream;
 
 import static org.junit.jupiter.api.Assertions.assertNotNull;
@@ -60,12 +61,22 @@ public class NativeQueryTests {
     public void 결과_타입을_정의한_네이티브_쿼리_사용_테스트() {
 
         //given
-
+        int menuCodeParameter=15;
 
         //when
+        String query="SELECT menu_code, menu_name, menu_price, category_code, orderable_status FROM tbl_menu WHERE menu_code=?";
+//        String query="SELECT menu_code, menu_name, menu_price FROM tbl_menu WHERE menu_code=?";
 
+        Query nativeQuery = entityManager.createNativeQuery(query, Menu.class).setParameter(1, menuCodeParameter);
+        Menu foundMenu=(Menu) nativeQuery.getSingleResult();
 
         //then
+        assertNotNull(foundMenu);
+        System.out.println("foundMenu : "+foundMenu);
+
+        assertTrue(entityManager.contains(foundMenu));
+        System.out.println(("contains : "+entityManager.contains(foundMenu)));
+
 
 
     }
@@ -75,9 +86,15 @@ public class NativeQueryTests {
     public void 결과_타입을_정의할_수_없는_경우_조회_테스트() {
 
         //when
-
+        String query="SELECT menu_code, menu_price FROM tbl_menu";
+        List<Object[]> menuList=entityManager.createNativeQuery(query).getResultList();
 
         //then
+        assertNotNull(menuList);
+        menuList.forEach(row->{
+            Stream.of(row).forEach(col->System.out.println(col+" "));
+            System.out.println();
+        });
 
     }
 
@@ -86,6 +103,15 @@ public class NativeQueryTests {
     public void 자동_결과_매핑을_사용한_조회_테스트() {
 
         //when
+        String query="SELECT\n"+
+                "       a.category_code, a.category_name, a.ref_category_code, COALESCE(v.menu_count, 0)menu_count\n"+
+                "   FROM tbl_category a\n"+
+                "   LEFT JOIN (SELECT COUNT(*) AS menu_count, b.category_code \n"+
+                "               FROM tbl_menu b\n"+
+                "               GROUP BY B.category_code) v ON (a.category_code=v.cateogry_code\n"+
+                "ORDER BY 1";
+
+        Query nativeQuery=entityManager.createNativeQuery(query);
 
 
         //then
