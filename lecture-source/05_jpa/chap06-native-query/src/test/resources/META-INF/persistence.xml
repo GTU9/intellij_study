@@ -9,8 +9,8 @@
 		<properties>
 			<!-- 데이터 베이스 연결 정보 -->
 			<property name="jakarta.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver"/>
-			<property name="jakarta.persistence.jdbc.user" value="sahmyook"/>
-			<property name="jakarta.persistence.jdbc.password" value="sahmyook"/>
+			<property name="jakarta.persistence.jdbc.user" value="root"/>
+			<property name="jakarta.persistence.jdbc.password" value="root"/>
 			<property name="jakarta.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/menu"/>
 			<!-- hibernate 설정 (실행 되는 sql 구문을 format 형태로 보여준다) -->
 			<property name="hibernate.show_sql" value="true"/>
