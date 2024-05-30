@@ -111,10 +111,18 @@ public class NativeQueryTests {
                 "               GROUP BY B.category_code) v ON (a.category_code=v.cateogry_code\n"+
                 "ORDER BY 1";
 
-        Query nativeQuery=entityManager.createNativeQuery(query);
-
+        Query nativeQuery=entityManager.createNativeQuery(query,"categoryCountAutoMapping");
+        List<Object[]> categoryList = nativeQuery.getResultList();
 
         //then
+        assertNotNull(categoryList);
+
+        assertTrue(entityManager.contains(categoryList.get(0)[0]));
+        System.out.println("contains : "+entityManager.contains(categoryList.get(0)[0]));
+        categoryList.forEach(row->{
+            Stream.of(row).forEach(col-> System.out.println(col + " "));
+            System.out.println();
+        });
 
     }
     
@@ -122,9 +130,28 @@ public class NativeQueryTests {
     public void 수동_결과_매핑을_사용한_조회_테스트() {
 
         //when
+        String query = "SELECT\n" +
+                "       a.category_code, a.category_name, a.ref_category_code, COALESCE(v.menu_count, 0) menu_count\n" +
+                "   FROM tbl_category a\n" +
+                "   LEFT JOIN (SELECT COUNT(*) AS menu_count, b.category_code \n" +
+                "               FROM tbl_menu b\n" +
+                "               GROUP BY B.category_code) v ON (a.category_code = v.category_code)\n" +
+                " ORDER BY 1";
 
 
         //then
+        Query nativeQuery=entityManager.createNativeQuery(query,"categoryCountManualMapping");
+        List<Object[]> categoryList=nativeQuery.getResultList();
+
+        assertNotNull(categoryList);
+
+        assertTrue(entityManager.contains(categoryList.get(0)[0]));
+        System.out.println("contains : "+entityManager.contains(categoryList.get(0)[0]));
+        categoryList.forEach(row->{
+            Stream.of(row).forEach(col-> System.out.println(col + " "));
+            System.out.println();
+        });
+
 
     }
     

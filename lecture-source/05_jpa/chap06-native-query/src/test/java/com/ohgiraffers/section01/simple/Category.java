@@ -1,13 +1,33 @@
 package com.ohgiraffers.section01.simple;
 
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 
 @Entity(name="category_section01")
 @Table(name="tbl_category")
+@SqlResultSetMappings(
+        value = {
+                @SqlResultSetMapping(
+                        name = "categoryCountAutoMapping",
+                        entities = {@EntityResult(entityClass = Category.class)},
+                        columns = {@ColumnResult(name = "menu_count")}
+                ),
+
+                @SqlResultSetMapping(
+                        name = "categoryCountManualMapping",
+                        entities = {
+                                @EntityResult(entityClass = Category.class,
+                                        fields = {
+                                                @FieldResult(name = "categoryCode", column = "category_code"),
+                                                @FieldResult(name = "categoryName", column = "category_name"),
+                                                @FieldResult(name = "refCategoryCode", column = "ref_category_code")
+                                        })
+                        },
+                        columns = {@ColumnResult(name = "menu_count")}
+                )
+        }
+)
+
 public class Category {
 
     @Id
