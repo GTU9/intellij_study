@@ -43,9 +43,17 @@ public class NamedNativeQueryTests {
 	public void NamedNativeQuery를_이용한_조회_테스트() {
 		
 		//when
+		Query naitveQuery=entityManager.createNamedQuery("Category.menuCountOfCategory");
+		List<Object[]> categorylist=naitveQuery.getResultList();
 
 
     	//then
+		assertNotNull(categorylist);
+
+		categorylist.forEach(row->{
+			Stream.of(row).forEach(col-> System.out.println(col + " "));
+			System.out.println();
+		});
 		
 	}
 
