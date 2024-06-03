@@ -21,7 +21,7 @@ public class UserController {
     public void signup(){}
 
     @PostMapping("/signup")
-    public ModelAndView singup(ModelAndView mv, @ModelAttribute SignupDTO signupDTO){
+    public ModelAndView signup(ModelAndView mv, @ModelAttribute SignupDTO signupDTO){
 
         int result=userService.regist(signupDTO);
 

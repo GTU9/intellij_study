@@ -1,5 +1,6 @@
 package com.ohgiraffers.sessionsecurity.auth.model.service;
 
+import com.ohgiraffers.sessionsecurity.auth.model.AuthDetails;
 import com.ohgiraffers.sessionsecurity.user.model.Service.UserService;
 import com.ohgiraffers.sessionsecurity.user.model.dto.LoginUserDTO;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,6 +17,7 @@ public class AuthService implements UserDetailsService {
     @Autowired
     private UserService userService;
 
+
     @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
 
@@ -25,6 +27,5 @@ public class AuthService implements UserDetailsService {
             throw new UsernameNotFoundException("해당하는 회원 정보가 존재하지 않습니다.");
         }
 
-        return null;
-    }
+        return new AuthDetails(login);    }
 }

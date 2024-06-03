@@ -18,6 +18,7 @@ import org.springframework.security.web.util.matcher.AntPathRequestMatcher;
 @EnableWebSecurity
 public class SecurityConfig {
 
+    @Autowired
     private AuthFailHandler authFailHandler;
 
     @Bean
@@ -35,7 +36,7 @@ public class SecurityConfig {
     public SecurityFilterChain configure(HttpSecurity http) throws Exception {
 
         http.authorizeHttpRequests(auth->{
-            auth.requestMatchers("/auth/login","/user/signup","/auth/fail", "/main").permitAll();
+            auth.requestMatchers("/auth/login","/user/signup","/auth/fail","/", "/main").permitAll();
             auth.requestMatchers("/amdin/*").hasAnyAuthority(UserRole.ADMIN.getRole());
             auth.requestMatchers("/user/*").hasAnyAuthority(UserRole.USER.getRole());
             auth.anyRequest().authenticated();
