@@ -11,3 +11,7 @@ spring:
     url: jdbc:mysql://localhost:3306/login
     username: sahmyook
     password: sahmyook
+
+jwt:
+  key: 21jk21n32jk1n32jk1ln321mnhjfd
+  time: 864000000
