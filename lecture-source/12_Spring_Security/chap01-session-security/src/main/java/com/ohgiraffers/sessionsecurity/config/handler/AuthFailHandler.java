@@ -13,6 +13,7 @@ import org.springframework.security.web.authentication.SimpleUrlAuthenticationFa
 import java.io.IOException;
 import java.net.URLEncoder;
 
+/*사용자의 로그인 실패 시 실패 요청을 커스텀 하기 위한 핸들러이다.*/
 @Configuration
 public class AuthFailHandler extends SimpleUrlAuthenticationFailureHandler {
     @Override
