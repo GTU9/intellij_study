@@ -1,0 +1,22 @@
+package com.ohgiraffers.jwtsecurity.auth.model.service;
+
+import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.security.core.userdetails.UserDetailsService;
+import org.springframework.security.core.userdetails.UsernameNotFoundException;
+import org.springframework.stereotype.Service;
+
+@Service
+public class DetailsService implements UserDetailsService {
+
+    /**
+     * description. 로그인 요청 시 사용자의 id를 받아 DB에서 사용자 정보를 가져오는 메소드
+     *
+     * @param username the username identifying the user whose data is required.
+     * @return UserDetails
+     * @throws UsernameNotFoundException
+     */
+    @Override
+    public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
+        return null;
+    }
+}
