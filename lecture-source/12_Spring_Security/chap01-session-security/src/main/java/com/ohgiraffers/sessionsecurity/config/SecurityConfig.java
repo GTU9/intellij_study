@@ -42,7 +42,7 @@ public class SecurityConfig {
             auth.anyRequest().authenticated();
                 })
                 .formLogin(login->{
-                    login.loginPage("/auth/login");
+//                    login.loginPage("/auth/login");
                     login.usernameParameter("user");
                     login.passwordParameter("pass");
                     login.defaultSuccessUrl("/",true);
