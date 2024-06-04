@@ -1,4 +1,4 @@
-package com.ohgiraffers.sessionsecurity.user.model.Service;
+package com.ohgiraffers.sessionsecurity.user.model.service;
 
 import com.ohgiraffers.sessionsecurity.user.model.dao.UserMapper;
 import com.ohgiraffers.sessionsecurity.user.model.dto.LoginUserDTO;
@@ -14,32 +14,35 @@ public class UserService {
 
     @Autowired
     private UserMapper userMapper;
+
     @Autowired
     private PasswordEncoder passwordEncoder;
 
 
-    public int regist(SignupDTO signupDTO){
+    public int regist(SignupDTO signupDTO) {
 
         signupDTO.setUserPass(passwordEncoder.encode(signupDTO.getUserPass()));
 
-        int result=0;
+        int result = 0;
 
-        try{
-            result=userMapper.regist(signupDTO);
-        }catch (Exception e){
+        try {
+            result = userMapper.regist(signupDTO);
+        } catch (Exception e){
             e.printStackTrace();
         }
 
         return result;
     }
 
-    public LoginUserDTO findByUsername(String username){
-        LoginUserDTO login=userMapper.findByUsername(username);
+    public LoginUserDTO findByUsername(String username) {
 
-        if(!Objects.isNull(login)){
+        LoginUserDTO login = userMapper.findByUsername(username);
+
+        if (!Objects.isNull(login)) {
             return login;
-        }else{
+        } else {
             return null;
         }
+
     }
 }

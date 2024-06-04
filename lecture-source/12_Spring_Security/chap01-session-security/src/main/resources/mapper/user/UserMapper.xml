@@ -14,27 +14,27 @@
 
     <insert id="regist" parameterType="com.ohgiraffers.sessionsecurity.user.model.dto.SignupDTO">
         INSERT INTO TBL_USER (
-        USER_ID
-        ,USER_NAME
-        ,PASSWORD
-        ,USER_ROLE
-        )
+                                USER_ID
+                                ,USER_NAME
+                                ,PASSWORD
+                                ,USER_ROLE
+                              )
         VALUES (
-        #{ userId }
-        ,#{ userName }
-        ,#{ userPass }
-        ,#{ role }
+                #{ userId }
+                ,#{ userName }
+                ,#{ userPass }
+                ,#{ role }
         )
     </insert>
 
     <select id="findByUsername" resultMap="login">
         SELECT
-        USER_NO
-        ,USER_ID
-        ,USER_NAME
-        ,PASSWORD
-        ,USER_ROLE
-        FROM TBL_USER
-        WHERE USER_ID = #{ username }
+                USER_NO
+                ,USER_ID
+                ,USER_NAME
+                ,PASSWORD
+                ,USER_ROLE
+          FROM TBL_USER
+         WHERE USER_ID = #{ username }
     </select>
 </mapper>

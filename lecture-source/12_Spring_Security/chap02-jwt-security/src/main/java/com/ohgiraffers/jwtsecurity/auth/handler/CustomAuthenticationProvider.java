@@ -23,20 +23,19 @@ public class CustomAuthenticationProvider implements AuthenticationProvider {
         UsernamePasswordAuthenticationToken loginToken = (UsernamePasswordAuthenticationToken) authentication;
 
         String id = loginToken.getName();
-        String pass=(String)loginToken.getCredentials();
+        String pass = (String) loginToken.getCredentials();
 
         DetailsUser detailsUser = (DetailsUser) detailsService.loadUserByUsername(id);
 
         if (!passwordEncoder.matches(pass, detailsUser.getPassword())) {
             throw new BadCredentialsException(pass + "는 틀린 비밀번호입니다.");
         }
-        
+
         return new UsernamePasswordAuthenticationToken(detailsUser, pass, detailsUser.getAuthorities());
     }
 
-
     @Override
     public boolean supports(Class<?> authentication) {
-        return false;
+        return authentication.equals(UsernamePasswordAuthenticationToken.class);
     }
 }

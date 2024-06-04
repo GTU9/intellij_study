@@ -2,6 +2,7 @@ package com.ohgiraffers.jwtsecurity.auth.config;
 
 import com.ohgiraffers.jwtsecurity.auth.filter.HeaderFilter;
 import com.ohgiraffers.jwtsecurity.auth.interceptor.JwtTokenInterceptor;
+import jakarta.servlet.FilterRegistration;
 import org.springframework.boot.web.servlet.FilterRegistrationBean;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -31,7 +32,6 @@ public class WebConfig implements WebMvcConfigurer {
         FilterRegistrationBean<HeaderFilter> registrationBean = new FilterRegistrationBean<HeaderFilter>(createHeaderFilter());
         registrationBean.setOrder(Integer.MIN_VALUE);
         registrationBean.addUrlPatterns("/*");
-
         return registrationBean;
     }
 
@@ -41,7 +41,7 @@ public class WebConfig implements WebMvcConfigurer {
     }
 
     @Bean
-    JwtTokenInterceptor jwtTokenInterceptor(){
+    public JwtTokenInterceptor jwtTokenInterceptor() {
         return new JwtTokenInterceptor();
     }
 }
