@@ -30,7 +30,7 @@ public class CustomAuthenticationProvider implements AuthenticationProvider {
         if (!passwordEncoder.matches(pass, detailsUser.getPassword())) {
             throw new BadCredentialsException(pass + "는 틀린 비밀번호입니다.");
         }
-        
+
         return new UsernamePasswordAuthenticationToken(detailsUser, pass, detailsUser.getAuthorities());
     }
 
