@@ -27,39 +27,40 @@ public class SecurityConfig {
     }
 
     @Bean
-    public WebSecurityCustomizer webSecurityCustomizer(){
-        return web->web.ignoring()
+    public WebSecurityCustomizer webSecurityCustomizer() {
+        return web -> web.ignoring()
                 .requestMatchers(PathRequest.toStaticResources().atCommonLocations());
     }
 
     @Bean
     public SecurityFilterChain configure(HttpSecurity http) throws Exception {
 
-        http.authorizeHttpRequests(auth->{
-            auth.requestMatchers("/auth/login","/user/signup","/auth/fail","/", "/main").permitAll();
-            auth.requestMatchers("/amdin/*").hasAnyAuthority(UserRole.ADMIN.getRole());
+        http.authorizeHttpRequests(auth -> {
+            auth.requestMatchers("/auth/login", "/user/signup", "/auth/fail", "/", "/main").permitAll();
+            auth.requestMatchers("/admin/*").hasAnyAuthority(UserRole.ADMIN.getRole());
             auth.requestMatchers("/user/*").hasAnyAuthority(UserRole.USER.getRole());
             auth.anyRequest().authenticated();
-                })
-                .formLogin(login->{
-//                    login.loginPage("/auth/login");
-                    login.usernameParameter("user");
-                    login.passwordParameter("pass");
-                    login.defaultSuccessUrl("/",true);
-                    login.failureHandler(authFailHandler);
-                })
-                .logout(logout->{
-                    logout.logoutRequestMatcher(new AntPathRequestMatcher("/auth/logout"));
-                    logout.deleteCookies("JSESSIONID");
-                    logout.invalidateHttpSession(true);
-                    logout.logoutSuccessUrl("/");
-                })
-                .sessionManagement(session->{
-                    session.maximumSessions(1);
-                    session.invalidSessionUrl("/");
-                })
-                .csrf(csrf->csrf.disable());
+
+        }).formLogin(login -> {
+            login.loginPage("/auth/login");
+            login.usernameParameter("user");
+            login.passwordParameter("pass");
+            login.defaultSuccessUrl("/", true);
+            login.failureHandler(authFailHandler);
+
+        }).logout(logout -> {
+            logout.logoutRequestMatcher(new AntPathRequestMatcher("/auth/logout"));
+            logout.deleteCookies("JSESSIONID");
+            logout.invalidateHttpSession(true);
+            logout.logoutSuccessUrl("/");
+
+        }).sessionManagement(session -> {
+            session.maximumSessions(1);
+            session.invalidSessionUrl("/");
+
+        }).csrf(csrf -> csrf.disable());
 
         return http.build();
     }
+
 }

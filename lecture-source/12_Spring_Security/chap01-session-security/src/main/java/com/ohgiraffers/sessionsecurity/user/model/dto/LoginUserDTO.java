@@ -2,16 +2,23 @@ package com.ohgiraffers.sessionsecurity.user.model.dto;
 
 import com.ohgiraffers.sessionsecurity.common.UserRole;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
 public class LoginUserDTO implements java.io.Serializable {
 
+
     private int userCode;
+
     private String userId;
+
     private String userName;
+
     private String password;
+
     private UserRole userRole;
+
 
     public LoginUserDTO() {
     }
@@ -24,11 +31,12 @@ public class LoginUserDTO implements java.io.Serializable {
         this.userRole = userRole;
     }
 
-    public List<String> getRole(){
-        if(this.userRole.getRole().length()>0) {
+    public List<String> getRole() {
+        if (this.userRole.getRole().length() > 0) {
             return Arrays.asList(this.userRole.getRole().split(","));
         }
-        return null;
+
+        return new ArrayList<>();
     }
 
     public int getUserCode() {

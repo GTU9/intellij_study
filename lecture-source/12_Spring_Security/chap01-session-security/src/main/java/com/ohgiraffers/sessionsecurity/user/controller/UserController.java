@@ -1,7 +1,7 @@
 package com.ohgiraffers.sessionsecurity.user.controller;
 
-import com.ohgiraffers.sessionsecurity.user.model.Service.UserService;
 import com.ohgiraffers.sessionsecurity.user.model.dto.SignupDTO;
+import com.ohgiraffers.sessionsecurity.user.model.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -18,24 +18,26 @@ public class UserController {
     private UserService userService;
 
     @GetMapping("/signup")
-    public void signup(){}
+    public void signup() {}
 
     @PostMapping("/signup")
-    public ModelAndView signup(ModelAndView mv, @ModelAttribute SignupDTO signupDTO){
+    public ModelAndView signup(ModelAndView mv, @ModelAttribute SignupDTO signupDTO) {
 
-        int result=userService.regist(signupDTO);
+        int result = userService.regist(signupDTO);
 
-        String message="";
-        if(result>0){
+        String message = "";
+
+        if (result > 0) {
             message = "회원가입이 정상적으로 완료되었습니다.";
             mv.setViewName("auth/login");
-        }else{
+        } else {
             message = "회원가입에 실패하였습니다.";
-            mv.setViewName("auth/signup");
+            mv.setViewName("user/signup");
         }
 
-        mv.addObject("message",message);
+        mv.addObject("message", message);
 
         return mv;
     }
+
 }

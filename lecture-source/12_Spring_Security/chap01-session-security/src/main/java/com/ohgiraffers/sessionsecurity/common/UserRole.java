@@ -1,6 +1,7 @@
 package com.ohgiraffers.sessionsecurity.common;
 
 public enum UserRole {
+
     USER("USER"),
 
     ADMIN("ADMIN");
@@ -8,7 +9,7 @@ public enum UserRole {
     private String role;
 
     UserRole(String role) {
-        this.role=role;
+        this.role = role;
     }
 
     public String getRole() {

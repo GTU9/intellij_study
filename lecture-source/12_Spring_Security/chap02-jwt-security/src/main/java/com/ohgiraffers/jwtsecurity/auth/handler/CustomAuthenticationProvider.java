@@ -23,7 +23,7 @@ public class CustomAuthenticationProvider implements AuthenticationProvider {
         UsernamePasswordAuthenticationToken loginToken = (UsernamePasswordAuthenticationToken) authentication;
 
         String id = loginToken.getName();
-        String pass=(String)loginToken.getCredentials();
+        String pass = (String) loginToken.getCredentials();
 
         DetailsUser detailsUser = (DetailsUser) detailsService.loadUserByUsername(id);
 
@@ -34,9 +34,8 @@ public class CustomAuthenticationProvider implements AuthenticationProvider {
         return new UsernamePasswordAuthenticationToken(detailsUser, pass, detailsUser.getAuthorities());
     }
 
-
     @Override
     public boolean supports(Class<?> authentication) {
-        return false;
+        return authentication.equals(UsernamePasswordAuthenticationToken.class);
     }
 }

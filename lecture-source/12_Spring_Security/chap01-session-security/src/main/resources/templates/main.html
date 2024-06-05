@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns:sec="http://www.thymleaf.org/extras/spring-security">
+<html xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
@@ -8,11 +8,10 @@
     <h1>Spring Security Login</h1>
 
     <div sec:authorize="hasAnyAuthority('ADMIN')">
-        <h1>====관리자 페이지====</h1>
+        <h1>=== 관리자 페이지 ===</h1>
     </div>
-
     <div sec:authorize="hasAnyAuthority('USER')">
-        <h1>====회원 페이지====</h1>
+        <h1>=== 회원 페이지 ===</h1>
     </div>
 
     <div>
@@ -23,6 +22,9 @@
             <button>로그아웃</button>
         </form>
     </div>
-
+    <hr>
+    <a href="admin/page">관리자 페이지</a>
+    <br>
+    <a href="user/page">사용자 페이지</a>
 </body>
 </html>

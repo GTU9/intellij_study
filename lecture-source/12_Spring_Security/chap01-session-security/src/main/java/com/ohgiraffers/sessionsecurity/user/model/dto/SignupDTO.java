@@ -1,10 +1,15 @@
 package com.ohgiraffers.sessionsecurity.user.model.dto;
 
-public class SignupDTO {
+public class SignupDTO implements java.io.Serializable {
+
     private String userId;
+
     private String userName;
+
     private String userPass;
+
     private String role;
+
 
     public SignupDTO() {
     }

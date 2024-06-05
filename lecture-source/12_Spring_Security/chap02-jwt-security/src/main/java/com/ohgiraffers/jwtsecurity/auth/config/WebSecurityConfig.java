@@ -1,7 +1,9 @@
 package com.ohgiraffers.jwtsecurity.auth.config;
 
-import com.ohgiraffers.jwtsecurity.auth.filter.HeaderFilter;
+import com.ohgiraffers.jwtsecurity.auth.filter.CustomAuthenticationFilter;
 import com.ohgiraffers.jwtsecurity.auth.filter.JwtAuthorizationFilter;
+import com.ohgiraffers.jwtsecurity.auth.handler.CustomAuthFailureHandler;
+import com.ohgiraffers.jwtsecurity.auth.handler.CustomAuthSuccessHandler;
 import com.ohgiraffers.jwtsecurity.auth.handler.CustomAuthenticationProvider;
 import org.springframework.boot.autoconfigure.security.servlet.PathRequest;
 import org.springframework.context.annotation.Bean;
@@ -39,15 +41,14 @@ public class WebSecurityConfig {
      * @return SecurityFilterChain
      * @throws Exception
      */
-
     @Bean
-    public SecurityFilterChain securityFilterChain(HttpSecurity http)throws Exception{
+    public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
         http.csrf(AbstractHttpConfigurer::disable)
                 .addFilterBefore(jwtAuthorizationFilter(), BasicAuthenticationFilter.class)
-                .sessionManagement(session->session.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
-                .formLogin(form->form.disable())
+                .sessionManagement(session -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
+                .formLogin(form -> form.disable())
                 .addFilterBefore(customAuthenticationFilter(), UsernamePasswordAuthenticationFilter.class)
-                .httpBasic(basic->basic.disable());
+                .httpBasic(basic -> basic.disable());
 
         return http.build();
     }
@@ -57,23 +58,20 @@ public class WebSecurityConfig {
      *
      * @return JwtAuthorizationFilter
      */
-
-    @Bean
-    public JwtAuthorizationFilter jwtAuthorizationFilter(){
-        return new ProviderManager(customAuthenticationProvider());
+    private JwtAuthorizationFilter jwtAuthorizationFilter() {
+        return new JwtAuthorizationFilter(authenticationManager());
     }
+
 
     /**
      * description. Authentization의 인증 메소드를 제공하는 매니저(= Provider의 인터페이스)를 반환하는 메소드
      *
      * @return AuthenticationManager
      */
-
     @Bean
-    public AuthenticationManager authenticationManager(){
+    public AuthenticationManager authenticationManager() {
         return new ProviderManager(customAuthenticationProvider());
     }
-
 
 
     /**
@@ -81,9 +79,8 @@ public class WebSecurityConfig {
      *
      * @return CustomAuthenticationProvider
      */
-
     @Bean
-    public CustomAuthenticationProvider customAuthenticationProvider(){
+    public CustomAuthenticationProvider customAuthenticationProvider() {
         return new CustomAuthenticationProvider();
     }
 
@@ -92,7 +89,6 @@ public class WebSecurityConfig {
      *
      * @return BCryptPasswordEncoder
      */
-
     @Bean
     public BCryptPasswordEncoder bCryptPasswordEncoder() {
         return new BCryptPasswordEncoder();
@@ -103,19 +99,33 @@ public class WebSecurityConfig {
      *
      * @return CustomAuthenticationFilter
      */
-
+    @Bean
+    public CustomAuthenticationFilter customAuthenticationFilter() {
+        CustomAuthenticationFilter customAuthenticationFilter = new CustomAuthenticationFilter(authenticationManager());
+        customAuthenticationFilter.setFilterProcessesUrl("/login");
+        customAuthenticationFilter.setAuthenticationSuccessHandler(customAuthLoginSuccessHandler());
+        customAuthenticationFilter.setAuthenticationFailureHandler(customAuthLoginFailureHandler());
+        customAuthenticationFilter.afterPropertiesSet();
+        return customAuthenticationFilter;
+    }
 
     /**
      * description. 사용자 정보가 맞을 경우 (= 로그인 성공 시) 수행하는 핸들러를 반환하는 메소드
      *
      * @return CustomAuthSuccessHandler
      */
+    private CustomAuthSuccessHandler customAuthLoginSuccessHandler() {
+        return new CustomAuthSuccessHandler();
+    }
 
     /**
      * description. 사용자 정보가 맞지 않는 경우 (= 로그인 실패 시) 수행하는 핸들러를 반환하는 메소드
      *
      * @return CustomAuthFailureHandler
      */
+    private CustomAuthFailureHandler customAuthLoginFailureHandler() {
+        return new CustomAuthFailureHandler();
+    }
 
 
 }

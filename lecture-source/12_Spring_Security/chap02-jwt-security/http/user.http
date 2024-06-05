@@ -1,0 +1,26 @@
+### 회원가입
+POST http://localhost:8080/signup
+Content-Type: application/json
+Accept: */*
+
+{
+  "userId": "user01",
+  "userPass": "pass01",
+  "userName": "토끼",
+  "userEmail": "rabbit@ohgiraffers.com",
+  "role": "ADMIN"
+}
+
+### 로그인
+POST http://localhost:8080/login
+Content-Type: application/json
+Accept: */*
+
+{
+  "id": "user01",
+  "pass": "pass01"
+}
+
+### GET 요청
+GET http://localhost:8080/test
+Authorization: BEARER eyJkYXRlIjoxNzE3NDg2ODQ1ODEwLCJ0eXBlIjoiand0IiwiYWxnIjoiSFMyNTYifQ.eyJSb2xlIjoiQURNSU4iLCJzdWIiOiJvaGdpcmFmZmVycyB0b2tlbiA6IDEiLCJ1c2VyTmFtZSI6Iu2GoOuBvCIsImV4cCI6MTcxNzU3MzI0NX0.BuqYeYmc4Ze5EtTs67TXTejlIttzhTV4T8YupXva9SE
