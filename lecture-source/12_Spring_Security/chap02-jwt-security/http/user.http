@@ -4,11 +4,11 @@ Content-Type: application/json
 Accept: */*
 
 {
-  "userId": "user01",
-  "userPass": "pass01",
+  "userId": "user03",
+  "userPass": "pass03",
   "userName": "토끼",
   "userEmail": "rabbit@ohgiraffers.com",
-  "role": "ADMIN"
+  "role": "ALL"
 }
 
 ### 로그인
@@ -17,10 +17,16 @@ Content-Type: application/json
 Accept: */*
 
 {
-  "id": "user01",
-  "pass": "pass01"
+  "id": "user03",
+  "pass": "pass03"
 }
 
 ### GET 요청
 GET http://localhost:8080/test
-Authorization: BEARER eyJkYXRlIjoxNzE3NDg2ODQ1ODEwLCJ0eXBlIjoiand0IiwiYWxnIjoiSFMyNTYifQ.eyJSb2xlIjoiQURNSU4iLCJzdWIiOiJvaGdpcmFmZmVycyB0b2tlbiA6IDEiLCJ1c2VyTmFtZSI6Iu2GoOuBvCIsImV4cCI6MTcxNzU3MzI0NX0.BuqYeYmc4Ze5EtTs67TXTejlIttzhTV4T8YupXva9SE
+Authorization: BEARER eyJkYXRlIjoxNzE3NTQ3MjUzNzU5LCJ0eXBlIjoiand0IiwiYWxnIjoiSFMyNTYifQ.eyJSb2xlIjoiVVNFUiIsInN1YiI6Im9oZ2lyYWZmZXJzIHRva2VuIDogMiIsInVzZXJOYW1lIjoi7Yag64G8IiwiZXhwIjoxNzE3NjMzNjUzfQ.aBuk6xHMnMJ7Y0aUWvplx1xPwMhZ51Wk8R-hcgfdW74
+
+### POST 요청
+POST http://localhost:8080/test
+Content-Type: application/json
+Accept: */*
+Authorization: BEARER eyJkYXRlIjoxNzE3NTQ3MjUzNzU5LCJ0eXBlIjoiand0IiwiYWxnIjoiSFMyNTYifQ.eyJSb2xlIjoiVVNFUiIsInN1YiI6Im9oZ2lyYWZmZXJzIHRva2VuIDogMiIsInVzZXJOYW1lIjoi7Yag64G8IiwiZXhwIjoxNzE3NjMzNjUzfQ.aBuk6xHMnMJ7Y0aUWvplx1xPwMhZ51Wk8R-hcgfdW74
