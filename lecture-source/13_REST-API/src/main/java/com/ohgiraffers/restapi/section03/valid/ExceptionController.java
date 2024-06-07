@@ -27,6 +27,23 @@ public class ExceptionController {
         String description = "";
         String detail = "";
 
-        e.getBindingResult().hasErrors()
+        if(e.getBindingResult().hasErrors()){
+
+            detail=e.getBindingResult().getFieldError().getDefaultMessage();
+            System.out.println("getDefaultMessage() : "+detail);
+
+            String bindResultCode=e.getBindingResult().getFieldError().getCode();
+
+            switch (bindResultCode){
+                case "NotBlanck":
+                    code="ERROR_CODE_00002";
+                    description="필수 값이 누락되었습니다.";
+                    break;
+                case "Size":
+                    code="ERROR_CODE_00003";
+                    description="글자 수를 확인해야 합니다.";
+                    break;
+            }
+        }
     }
 }
