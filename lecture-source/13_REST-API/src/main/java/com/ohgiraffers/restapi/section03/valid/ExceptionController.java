@@ -27,23 +27,27 @@ public class ExceptionController {
         String description = "";
         String detail = "";
 
-        if(e.getBindingResult().hasErrors()){
+        /* 에러가 있다면 */
+        if(e.getBindingResult().hasErrors()) {
 
-            detail=e.getBindingResult().getFieldError().getDefaultMessage();
-            System.out.println("getDefaultMessage() : "+detail);
+            detail = e.getBindingResult().getFieldError().getDefaultMessage();  // = e.getMessage
+            System.out.println("getDefaultMessage() : " + detail);
 
-            String bindResultCode=e.getBindingResult().getFieldError().getCode();
+            String bindResultCode = e.getBindingResult().getFieldError().getCode(); // NotNull, Size, NotBlank, ...
 
-            switch (bindResultCode){
-                case "NotBlanck":
-                    code="ERROR_CODE_00002";
-                    description="필수 값이 누락되었습니다.";
+            switch (bindResultCode) {
+                case "NotBlank":
+                    code = "ERROR_CODE_00002";
+                    description = "필수 값이 누락되었습니다.";
                     break;
                 case "Size":
-                    code="ERROR_CODE_00003";
-                    description="글자 수를 확인해야 합니다.";
+                    code = "ERROR_CODE_00003";
+                    description = "글자 수를 확인해야 합니다.";
                     break;
             }
+
         }
+        return new ResponseEntity<>(new ErrorResponse(code, description, detail), HttpStatus.BAD_REQUEST);
+
     }
 }

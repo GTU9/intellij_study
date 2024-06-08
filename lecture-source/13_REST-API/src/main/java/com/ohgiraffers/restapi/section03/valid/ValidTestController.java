@@ -1,7 +1,7 @@
 package com.ohgiraffers.restapi.section03.valid;
 
 
-import com.ohgiraffers.restapi.section02.responseentity.ResponseMessage;
+import com.ohgiraffers.restapi.section2.responseentity.ResponseMessage;
 import jakarta.validation.Valid;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.MediaType;
